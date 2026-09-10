@@ -1,0 +1,410 @@
+.logistics-section {
+  padding: 3rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logistics-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logistics-header .section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  color: #1565c0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.logistics-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 0.5rem;
+}
+
+.logistics-header p {
+  color: #666;
+  font-size: 1.05rem;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* Route Visualization */
+
+.route-visualization {
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8faf8, #e8f5e9);
+  border-radius: 16px;
+  border: 1px solid #e0e0e0;
+}
+
+.route-path {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.route-line {
+  position: absolute;
+  top: 24px;
+  left: 48px;
+  right: 48px;
+  height: 3px;
+  background: #c8e6c9;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.route-dot-animation {
+  width: 12px;
+  height: 12px;
+  background: #4caf50;
+  border-radius: 50%;
+  position: absolute;
+  top: -4.5px;
+  animation: moveAlongPath 3s ease-in-out infinite;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+@keyframes moveAlongPath {
+  0% { left: 0; }
+  50% { left: calc(100% - 12px); }
+  100% { left: 0; }
+}
+
+.route-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  z-index: 1;
+}
+
+.route-node-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #4caf50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4caf50;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.15);
+}
+
+.route-node span {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Tabs */
+
+.logistics-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 2rem;
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 4px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tab-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.tab-btn.active {
+  background: #fff;
+  color: #1565c0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.tab-btn:hover:not(.active) {
+  color: #555;
+}
+
+/* Grid */
+
+.logistics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+/* Card */
+
+.logistics-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1.5px solid #f0f0f0;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s;
+  display: flex;
+  flex-direction: column;
+}
+
+.logistics-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  border-color: #e0e0e0;
+}
+
+.logistics-card.booked,
+.logistics-card.reserved {
+  border-color: #a5d6a7;
+  background: #f9fdf9;
+}
+
+.logistics-card.unavailable {
+  opacity: 0.65;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.vehicle-badge,
+.storage-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 8px;
+  background: #f0f4ff;
+  color: #1565c0;
+  white-space: nowrap;
+}
+
+.storage-badge {
+  background: #fef3e2;
+  color: #e65100;
+}
+
+.vehicle-emoji,
+.storage-emoji {
+  font-size: 0.85rem;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  margin-bottom: 1.25rem;
+}
+
+.card-detail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.card-detail strong {
+  color: #333;
+}
+
+.card-detail.rating {
+  margin-top: 4px;
+}
+
+.stars {
+  display: flex;
+  gap: 1px;
+  align-items: center;
+}
+
+.card-detail.rating strong {
+  margin-left: 6px;
+  color: #ffc107;
+  font-size: 0.88rem;
+}
+
+.availability-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.availability-dot.available {
+  background: #4caf50;
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.4);
+}
+
+.availability-dot.unavailable {
+  background: #ef5350;
+}
+
+.status-available {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.status-unavailable {
+  color: #ef5350;
+  font-weight: 600;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+.cost-label {
+  display: block;
+  font-size: 0.7rem;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.cost-value {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.btn-book {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.btn-book:hover:not(.disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.35);
+}
+
+.btn-book.disabled {
+  background: #e0e0e0;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.unavailable-x {
+  font-size: 0.9rem;
+  margin-left: 2px;
+}
+
+.btn-booked {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  border: 1.5px solid #a5d6a7;
+  border-radius: 10px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: default;
+  white-space: nowrap;
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+  .logistics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .logistics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .logistics-section {
+    padding: 2rem 1rem;
+  }
+
+  .logistics-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .route-path {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .route-line {
+    width: 3px;
+    height: 100%;
+    top: 48px;
+    left: 22.5px;
+    right: auto;
+  }
+
+  @keyframes moveAlongPath {
+    0% { left: 18px; top: 0; }
+    50% { left: 18px; top: calc(100% - 12px); }
+    100% { left: 18px; top: 0; }
+  }
+
+  .route-node-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .logistics-tabs {
+    max-width: 100%;
+  }
+}

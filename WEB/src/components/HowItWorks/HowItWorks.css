@@ -1,0 +1,231 @@
+:root {
+  --hiw-primary: #2563eb;
+  --hiw-primary-light: #3b82f6;
+  --hiw-primary-dark: #1d4ed8;
+  --hiw-primary-bg: rgba(37, 99, 235, 0.06);
+  --hiw-primary-border: rgba(37, 99, 235, 0.12);
+  --hiw-bg: #f8fafc;
+  --hiw-text: #0f172a;
+  --hiw-text-secondary: #475569;
+  --hiw-text-muted: #94a3b8;
+  --hiw-border: #e2e8f0;
+  --hiw-white: #ffffff;
+  --hiw-radius: 14px;
+}
+
+.how-it-works {
+  padding: 80px 24px;
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.hiw-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.hiw-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: var(--hiw-primary-bg);
+  color: var(--hiw-primary);
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  letter-spacing: 0.02em;
+}
+
+.hiw-title {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  color: var(--hiw-text);
+  margin: 0 0 12px;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+.hiw-subtitle {
+  font-size: clamp(15px, 2vw, 17px);
+  color: var(--hiw-text-secondary);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.steps-container {
+  position: relative;
+}
+
+.steps-line {
+  display: none;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.step-card {
+  position: relative;
+  background: var(--hiw-white);
+  border: 1px solid var(--hiw-border);
+  border-radius: var(--hiw-radius);
+  padding: 28px 24px;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.step-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.step-card:hover {
+  border-color: var(--hiw-primary-light);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.08);
+  transform: translateY(-4px);
+}
+
+.step-card.visible:hover {
+  transform: translateY(-4px);
+}
+
+.step-connector-line {
+  display: block;
+  width: 1px;
+  height: 24px;
+  background: var(--hiw-border);
+  margin: 0 auto 20px;
+}
+
+.step-card:first-child .step-connector-line {
+  display: none;
+}
+
+.step-number {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--hiw-primary);
+  letter-spacing: 0.08em;
+  margin-bottom: 14px;
+}
+
+.step-icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--hiw-primary-bg);
+  color: var(--hiw-primary);
+  margin-bottom: 16px;
+  transition: all 0.3s ease;
+}
+
+.step-card:hover .step-icon-circle {
+  background: var(--hiw-primary);
+  color: var(--hiw-white);
+  transform: scale(1.08);
+}
+
+.step-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--hiw-text);
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+
+.step-description {
+  font-size: 14px;
+  color: var(--hiw-text-secondary);
+  margin: 0;
+  line-height: 1.55;
+}
+
+.step-check {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .steps-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+  }
+
+  .steps-line {
+    display: block;
+    position: absolute;
+    top: 76px;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--hiw-primary-bg), var(--hiw-border), var(--hiw-primary-bg));
+    z-index: 0;
+  }
+
+  .step-card {
+    position: relative;
+    z-index: 1;
+    padding: 24px 16px;
+  }
+
+  .step-connector-line {
+    display: none;
+  }
+
+  .step-check {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(22, 163, 74, 0.08);
+    color: #16a34a;
+    margin-top: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease 0.5s;
+  }
+
+  .step-card.visible .step-check {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .steps-grid {
+    gap: 20px;
+  }
+
+  .step-card {
+    padding: 28px 20px;
+  }
+
+  .steps-line {
+    top: 84px;
+    left: 8%;
+    right: 8%;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .step-card:last-child {
+    grid-column: 1 / -1;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}

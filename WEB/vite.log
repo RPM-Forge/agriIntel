@@ -1,0 +1,21 @@
+
+> krishimarket-sih@1.0.0 dev
+> vite
+
+
+  [32m[1mVITE[22m v6.4.3[39m  [2mready in [0m[1m456[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://10.104.187.236:[1m5173[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[2m12:49:54 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/BuyerCard/BuyerCard.jsx[22m
+[2m12:49:57 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/BuyerMarketplace/BuyerMarketplace.jsx[22m
+[2m12:50:28 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/TrustSection/TrustSection.jsx, /src/components/TransactionTimeline/TransactionTimeline.jsx, /src/components/ImpactSection/ImpactSection.jsx, /src/components/LogisticsSection/LogisticsSection.jsx, /src/components/MatchingSection/MatchingSection.jsx[22m
+[2m12:50:39 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/TrustSection/TrustSection.jsx, /src/components/TransactionTimeline/TransactionTimeline.jsx, /src/components/ImpactSection/ImpactSection.jsx, /src/components/LogisticsSection/LogisticsSection.jsx, /src/components/MatchingSection/MatchingSection.jsx[22m
+[2m12:57:10 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m12:57:16 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Navbar/Navbar.jsx[22m
+[2m12:57:17 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Navbar/Navbar.jsx[22m
+[2m12:57:28 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Footer/Footer.jsx[22m
+[2m12:57:29 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Footer/Footer.jsx[22m
+[2m12:57:40 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Footer/Footer.jsx[22m
+[2m12:57:40 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Footer/Footer.jsx[22m
