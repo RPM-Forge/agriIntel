@@ -1,0 +1,160 @@
+buyer_id,buyer_name,crop_type,required_grade,min_qty_kg,max_qty_kg,max_price,state,district,verified,rating
+B0000,Buyer Company 0,Wheat,Grade C,200,3607,2064,Uttar Pradesh,Lucknow,True,4.4
+B0001,Buyer Company 1,Onion,Grade B,1000,3650,2119,Gujarat,Surat,True,4.9
+B0002,Buyer Company 2,Potato,FAQ,200,2748,1315,Maharashtra,Nashik,True,2.6
+B0003,Buyer Company 3,Wheat,Grade A,1000,4867,3057,Karnataka,Belagavi,True,
+B0004,Buyer Company 4,Tomato,Grade A,200,716,2273,Uttar Pradesh,Lucknow,False,4.3
+B0005,Buyer Company 5,Rice,Grade C,2000,2592,2982,Maharashtra,Pune,False,2.8
+B0006,Buyer Company 6,Tomato,FAQ,500,3748,1481,Bihar,Patna,True,3.8
+B0007,Buyer Company 7,Tomato,Grade A,200,1546,3222,Bihar,Patna,True,3.9
+B0008,Buyer Company 8,Potato,Grade C,1000,4011,1693,Bihar,Patna,True,2.9
+B0009,Buyer Company 9,Onion,FAQ,2000,2720,1676,Uttar Pradesh,Auraiya,True,2.6
+B0010,Buyer Company 10,Tomato,Grade A,1000,4595,4131,Karnataka,Belagavi,True,4.5
+B0011,Buyer Company 11,Tomato,Grade C,2000,5303,3639,Maharashtra,Nagpur,True,
+B0012,Buyer Company 12,Wheat,Grade C,500,2488,2802,Gujarat,Surat,True,
+B0013,Buyer Company 13,Potato,FAQ,2000,2962,1719,Bihar,Gaya,True,
+B0014,Buyer Company 14,Tomato,Grade A,500,2334,3277,Bihar,Gaya,True,3.5
+B0015,Buyer Company 15,Potato,Grade B,2000,4744,1325,Karnataka,Belagavi,False,3.1
+B0016,Buyer Company 16,Wheat,FAQ,500,3323,2700,Maharashtra,Pune,True,4.0
+B0017,Buyer Company 17,Tomato,FAQ,200,1168,3425,Uttar Pradesh,Lucknow,True,4.3
+B0018,Buyer Company 18,Potato,FAQ,2000,2785,2225,Karnataka,Bengaluru Rural,True,
+B0019,Buyer Company 19,Rice,Grade B,2000,5846,2084,Gujarat,Rajkot,False,2.7
+B0020,Buyer Company 20,Onion,FAQ,500,1801,1921,Uttar Pradesh,Lucknow,True,3.2
+B0021,Buyer Company 21,Potato,Grade A,2000,4886,1016,Bihar,Gaya,True,4.8
+B0022,Buyer Company 22,Rice,Grade A,1000,1503,3240,Gujarat,Surat,True,
+B0023,Buyer Company 23,Potato,FAQ,200,3260,1651,Maharashtra,Pune,True,4.3
+B0024,Buyer Company 24,Wheat,Grade B,500,3275,2787,Gujarat,Rajkot,False,3.7
+B0025,Buyer Company 25,Potato,Grade B,1000,1547,1146,Gujarat,Surat,True,4.2
+B0026,Buyer Company 26,Tomato,FAQ,500,2867,4231,Gujarat,Rajkot,True,
+B0027,Buyer Company 27,Wheat,FAQ,2000,4075,2727,Karnataka,Bengaluru Rural,True,3.9
+B0028,Buyer Company 28,Wheat,Grade C,2000,4182,2751,Karnataka,Bengaluru Rural,True,3.1
+B0029,Buyer Company 29,Onion,FAQ,1000,4328,1663,Karnataka,Belagavi,True,
+B0030,Buyer Company 30,Rice,Grade B,200,2635,3091,Bihar,Gaya,True,4.0
+B0031,Buyer Company 31,Onion,Grade A,200,2620,2429,Karnataka,Belagavi,True,3.8
+B0032,Buyer Company 32,Wheat,Grade C,2000,3684,2343,Karnataka,Belagavi,True,4.9
+B0033,Buyer Company 33,Rice,Grade A,200,3388,2397,Bihar,Gaya,False,3.9
+B0034,Buyer Company 34,Rice,Grade A,2000,5987,3405,Maharashtra,Pune,True,
+B0035,Buyer Company 35,Tomato,Grade A,1000,3973,1715,Karnataka,Belagavi,False,2.5
+B0036,Buyer Company 36,Tomato,FAQ,500,1740,4274,Gujarat,Rajkot,True,4.3
+B0037,Buyer Company 37,Onion,FAQ,500,4083,2345,Bihar,Patna,False,4.6
+B0038,Buyer Company 38,Tomato,Grade A,500,3630,2082,Gujarat,Surat,False,4.6
+B0039,Buyer Company 39,Onion,Grade B,2000,4055,2899,Maharashtra,Nashik,True,3.3
+B0040,Buyer Company 40,Wheat,FAQ,2000,4064,2646,Bihar,Patna,False,
+B0041,Buyer Company 41,Onion,Grade C,1000,2872,2053,Maharashtra,Nagpur,True,3.6
+B0042,Buyer Company 42,Onion,Grade B,2000,4629,2191,Bihar,Gaya,True,4.4
+B0043,Buyer Company 43,Tomato,Grade A,200,2851,1425,Bihar,Patna,True,2.5
+B0044,Buyer Company 44,Potato,Grade A,1000,1732,2216,Uttar Pradesh,Lucknow,True,2.6
+B0045,Buyer Company 45,Tomato,Grade B,200,2239,3688,Karnataka,Bengaluru Rural,False,
+B0046,Buyer Company 46,Rice,Grade A,500,3616,2728,Uttar Pradesh,Auraiya,False,3.7
+B0047,Buyer Company 47,Potato,Grade A,1000,2635,2591,Gujarat,Rajkot,True,
+B0048,Buyer Company 48,Wheat,FAQ,1000,1784,3007,Bihar,Patna,False,3.2
+B0049,Buyer Company 49,Tomato,FAQ,500,1894,3514,Karnataka,Belagavi,True,2.8
+B0050,Buyer Company 50,Wheat,Grade C,200,3883,2913,Bihar,Patna,True,
+B0051,Buyer Company 51,Wheat,Grade C,200,1320,2675,Uttar Pradesh,Lucknow,False,4.2
+B0052,Buyer Company 52,Rice,Grade A,2000,4712,2262,Maharashtra,Nagpur,True,3.5
+B0053,Buyer Company 53,Wheat,Grade A,1000,4089,2185,Maharashtra,Nagpur,True,3.3
+B0054,Buyer Company 54,Potato,Grade A,1000,3073,2353,Maharashtra,Pune,True,2.9
+B0055,Buyer Company 55,Wheat,FAQ,1000,4511,2388,Maharashtra,Nagpur,True,4.7
+B0056,Buyer Company 56,Tomato,Grade C,500,3046,3187,Maharashtra,Nagpur,False,2.7
+B0057,Buyer Company 57,Wheat,Grade A,1000,3160,2242,Maharashtra,Nashik,True,
+B0058,Buyer Company 58,Rice,Grade B,500,3002,3139,Gujarat,Surat,True,2.6
+B0059,Buyer Company 59,Rice,Grade A,500,2258,3480,Maharashtra,Nashik,False,
+B0060,Buyer Company 60,Wheat,FAQ,200,3137,2451,Karnataka,Bengaluru Rural,True,2.8
+B0061,Buyer Company 61,Tomato,Grade B,2000,3817,4248,Gujarat,Rajkot,True,4.9
+B0062,Buyer Company 62,Onion,Grade C,1000,2078,3051,Karnataka,Bengaluru Rural,True,
+B0063,Buyer Company 63,Potato,Grade B,2000,2909,2620,Karnataka,Bengaluru Rural,False,4.0
+B0064,Buyer Company 64,Rice,Grade A,200,1434,1982,Gujarat,Surat,True,2.7
+B0065,Buyer Company 65,Rice,Grade C,2000,4642,2722,Bihar,Gaya,True,3.0
+B0066,Buyer Company 66,Tomato,Grade A,500,3568,4205,Karnataka,Bengaluru Rural,True,4.0
+B0067,Buyer Company 67,Wheat,Grade A,500,3535,2741,Maharashtra,Nagpur,False,
+B0068,Buyer Company 68,Rice,Grade C,2000,2717,2196,Karnataka,Bengaluru Rural,True,4.1
+B0069,Buyer Company 69,Tomato,Grade A,500,1221,3641,Gujarat,Rajkot,True,
+B0070,Buyer Company 70,Tomato,FAQ,1000,1677,1427,Gujarat,Rajkot,True,4.7
+B0071,Buyer Company 71,Rice,Grade B,200,3654,2710,Uttar Pradesh,Auraiya,True,2.8
+B0072,Buyer Company 72,Potato,Grade B,1000,1901,1485,Gujarat,Surat,True,2.8
+B0073,Buyer Company 73,Tomato,FAQ,200,1293,1885,Gujarat,Surat,False,3.7
+B0074,Buyer Company 74,Wheat,Grade B,1000,4088,2734,Uttar Pradesh,Sitapur,False,
+B0075,Buyer Company 75,Tomato,Grade B,200,1155,2906,Bihar,Patna,True,2.6
+B0076,Buyer Company 76,Tomato,Grade B,1000,3867,3264,Bihar,Patna,False,4.5
+B0077,Buyer Company 77,Onion,Grade C,500,1059,2995,Gujarat,Rajkot,True,4.6
+B0078,Buyer Company 78,Tomato,Grade B,2000,4849,1020,Uttar Pradesh,Sitapur,True,4.7
+B0079,Buyer Company 79,Onion,Grade A,200,2553,2514,Maharashtra,Pune,True,3.5
+B0080,Buyer Company 80,Rice,Grade C,2000,3479,3126,Maharashtra,Nagpur,False,2.8
+B0081,Buyer Company 81,Onion,Grade A,500,2863,2449,Gujarat,Rajkot,False,4.6
+B0082,Buyer Company 82,Wheat,Grade A,2000,4076,2681,Uttar Pradesh,Sitapur,True,2.5
+B0083,Buyer Company 83,Potato,Grade C,500,4013,1112,Gujarat,Rajkot,True,2.7
+B0084,Buyer Company 84,Potato,Grade C,2000,4000,1358,Maharashtra,Nashik,True,4.0
+B0085,Buyer Company 85,Onion,Grade A,500,3658,2479,Karnataka,Bengaluru Rural,True,3.1
+B0086,Buyer Company 86,Rice,FAQ,500,2135,1911,Uttar Pradesh,Lucknow,True,4.7
+B0087,Buyer Company 87,Potato,Grade C,200,2551,2271,Gujarat,Rajkot,True,3.8
+B0088,Buyer Company 88,Onion,Grade B,200,1881,1657,Uttar Pradesh,Sitapur,True,
+B0089,Buyer Company 89,Potato,Grade A,500,2200,1853,Maharashtra,Nagpur,False,4.7
+B0090,Buyer Company 90,Rice,Grade A,1000,2694,2187,Uttar Pradesh,Sitapur,True,4.3
+B0091,Buyer Company 91,Tomato,Grade C,2000,4491,3430,Karnataka,Belagavi,True,4.1
+B0092,Buyer Company 92,Rice,Grade C,2000,3203,3416,Karnataka,Belagavi,True,2.8
+B0093,Buyer Company 93,Wheat,Grade C,200,2567,2340,Bihar,Gaya,True,
+B0094,Buyer Company 94,Tomato,Grade B,500,1660,1974,Karnataka,Belagavi,True,4.6
+B0095,Buyer Company 95,Potato,Grade A,2000,5226,1649,Karnataka,Bengaluru Rural,False,3.0
+B0096,Buyer Company 96,Tomato,Grade A,500,2657,3045,Bihar,Gaya,False,2.8
+B0097,Buyer Company 97,Wheat,Grade C,200,3351,2605,Bihar,Patna,True,3.9
+B0098,Buyer Company 98,Potato,FAQ,2000,2664,1285,Karnataka,Bengaluru Rural,True,2.8
+B0099,Buyer Company 99,Onion,Grade C,2000,2878,2168,Bihar,Patna,True,3.1
+B0100,Buyer Company 100,Tomato,Grade A,1000,3705,2824,Karnataka,Bengaluru Rural,True,
+B0101,Buyer Company 101,Onion,Grade A,500,3731,2239,Karnataka,Belagavi,True,4.0
+B0102,Buyer Company 102,Wheat,Grade C,1000,2939,2630,Bihar,Gaya,False,
+B0103,Buyer Company 103,Rice,FAQ,2000,3682,2135,Maharashtra,Nashik,False,3.5
+B0104,Buyer Company 104,Wheat,Grade C,200,2644,3075,Gujarat,Surat,False,
+B0105,Buyer Company 105,Onion,Grade C,200,2397,1858,Karnataka,Belagavi,True,
+B0106,Buyer Company 106,Rice,FAQ,500,1172,3485,Uttar Pradesh,Auraiya,False,3.2
+B0107,Buyer Company 107,Rice,Grade B,2000,3575,2414,Bihar,Gaya,False,4.5
+B0108,Buyer Company 108,Wheat,Grade B,1000,1616,2244,Maharashtra,Nagpur,False,3.7
+B0109,Buyer Company 109,Wheat,Grade C,1000,4072,2974,Maharashtra,Nagpur,False,3.9
+B0110,Buyer Company 110,Onion,Grade A,1000,2098,2154,Bihar,Patna,True,
+B0111,Buyer Company 111,Tomato,Grade C,200,899,2187,Bihar,Patna,True,3.5
+B0112,Buyer Company 112,Onion,Grade B,500,3227,2160,Karnataka,Bengaluru Rural,False,4.0
+B0113,Buyer Company 113,Potato,Grade B,200,752,1280,Bihar,Gaya,True,3.4
+B0114,Buyer Company 114,Potato,Grade B,1000,2133,2030,Gujarat,Rajkot,True,2.9
+B0115,Buyer Company 115,Tomato,Grade B,2000,2571,2964,Karnataka,Bengaluru Rural,True,2.7
+B0116,Buyer Company 116,Potato,Grade C,1000,1617,2524,Uttar Pradesh,Sitapur,False,
+B0117,Buyer Company 117,Tomato,Grade B,500,1533,1321,Uttar Pradesh,Lucknow,True,3.3
+B0118,Buyer Company 118,Onion,Grade A,2000,2634,3124,Maharashtra,Nashik,True,2.6
+B0119,Buyer Company 119,Rice,Grade C,200,3434,1821,Maharashtra,Pune,False,2.6
+B0120,Buyer Company 120,Onion,Grade C,500,1119,1685,Karnataka,Bengaluru Rural,True,
+B0121,Buyer Company 121,Potato,Grade B,1000,3568,2167,Karnataka,Belagavi,True,
+B0122,Buyer Company 122,Rice,Grade B,500,4088,2900,Maharashtra,Nagpur,True,4.9
+B0123,Buyer Company 123,Onion,FAQ,2000,5258,1719,Uttar Pradesh,Lucknow,True,4.0
+B0124,Buyer Company 124,Potato,Grade C,500,1506,1954,Gujarat,Rajkot,True,3.5
+B0125,Buyer Company 125,Tomato,Grade C,1000,3522,1473,Gujarat,Rajkot,True,2.6
+B0126,Buyer Company 126,Wheat,FAQ,2000,3273,2142,Karnataka,Belagavi,False,3.5
+B0127,Buyer Company 127,Wheat,Grade A,200,2323,2897,Bihar,Patna,True,3.7
+B0128,Buyer Company 128,Onion,Grade A,2000,5536,1845,Maharashtra,Nashik,True,4.0
+B0129,Buyer Company 129,Tomato,FAQ,2000,5470,3044,Bihar,Patna,True,
+B0130,Buyer Company 130,Rice,FAQ,2000,4484,2847,Karnataka,Belagavi,True,4.2
+B0131,Buyer Company 131,Wheat,Grade B,1000,1621,2203,Maharashtra,Nashik,True,3.1
+B0132,Buyer Company 132,Onion,Grade B,500,2240,2773,Gujarat,Surat,True,4.2
+B0133,Buyer Company 133,Onion,FAQ,2000,4567,2035,Karnataka,Belagavi,True,4.2
+B0134,Buyer Company 134,Rice,Grade A,200,2271,2721,Karnataka,Bengaluru Rural,True,4.7
+B0135,Buyer Company 135,Wheat,Grade C,200,3592,2336,Gujarat,Rajkot,True,
+B0136,Buyer Company 136,Tomato,FAQ,2000,5203,3268,Bihar,Gaya,True,3.9
+B0137,Buyer Company 137,Rice,FAQ,500,3420,2573,Gujarat,Rajkot,True,3.5
+B0138,Buyer Company 138,Potato,Grade A,200,1225,2714,Bihar,Gaya,True,
+B0139,Buyer Company 139,Rice,Grade C,1000,3187,2519,Maharashtra,Nagpur,True,3.6
+B0140,Buyer Company 140,Tomato,Grade A,1000,2748,1468,Uttar Pradesh,Auraiya,True,4.8
+B0141,Buyer Company 141,Onion,FAQ,200,1792,1541,Karnataka,Belagavi,True,4.7
+B0142,Buyer Company 142,Rice,Grade A,2000,5810,2800,Maharashtra,Pune,True,3.3
+B0143,Buyer Company 143,Tomato,Grade C,1000,2988,2785,Bihar,Gaya,True,
+B0144,Buyer Company 144,Onion,FAQ,1000,4795,1962,Karnataka,Bengaluru Rural,True,3.2
+B0145,Buyer Company 145,Onion,FAQ,1000,3249,1929,Karnataka,Bengaluru Rural,True,3.9
+B0146,Buyer Company 146,Onion,FAQ,2000,4147,2014,Bihar,Gaya,True,3.3
+B0147,Buyer Company 147,Wheat,Grade B,200,3062,3022,Karnataka,Bengaluru Rural,True,3.8
+B0148,Buyer Company 148,Wheat,Grade B,200,1684,2308,Bihar,Gaya,True,3.4
+B0149,Buyer Company 149,Potato,Grade B,1000,4965,1844,Gujarat,Rajkot,True,4.8
+EDGE_BUYER_PERFECT,Perfect Match Co,Onion,Grade A,300,1000,2300,Maharashtra,Nashik,True,5.0
+EDGE_BUYER_NOCROP,No Match Possible Co,Mustard,FAQ,100,500,5000,Bihar,Patna,True,4.0
+EDGE_BUYER_VERIFIED_NORATING,New Verified Buyer,Wheat,FAQ,100,2000,2800,Uttar Pradesh,Lucknow,True,
+EDGE_BUYER_UNVERIFIED_NORATING,Unverified New Buyer,Wheat,FAQ,100,2000,2800,Uttar Pradesh,Lucknow,False,
+EDGE_BUYER_HUGEMIN,Bulk Only Buyer,Potato,Grade A,5000,20000,2200,Gujarat,Surat,True,4.5
+EDGE_BUYER_TINYMAX,Small Retailer,Rice,FAQ,50,200,2200,Bihar,Gaya,True,3.5
+EDGE_BUYER_LOWBUDGET,Budget Buyer,Tomato,Grade A,200,1000,2000,Karnataka,Belagavi,True,4.0
+EDGE_AGG_BUYER,Big Aggregation Buyer,Onion,Grade A,1000,5000,2400,Maharashtra,Nashik,True,4.3
+EDGE_SHORTFALL_BUYER,Huge Rice Buyer,Rice,FAQ,10000,50000,2200,Bihar,Patna,True,4.0

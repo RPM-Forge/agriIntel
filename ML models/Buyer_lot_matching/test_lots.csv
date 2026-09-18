@@ -1,0 +1,815 @@
+lot_id,farmer_id,crop_type,quantity_kg,quality_grade,state,district,asking_price,status
+L0000,F0141,Onion,551,Grade B,Maharashtra,Nagpur,1785,available
+L0001,F0217,Rice,115,Grade A,Maharashtra,Nagpur,1991,available
+L0002,F0288,Tomato,457,FAQ,Karnataka,Bengaluru Rural,1902,available
+L0003,F0082,Rice,1479,FAQ,Bihar,Patna,2496,available
+L0004,F0053,Tomato,239,FAQ,Uttar Pradesh,Sitapur,1396,available
+L0005,F0023,Potato,1544,FAQ,Karnataka,Belagavi,2098,available
+L0006,F0151,Wheat,1748,Grade C,Maharashtra,Nagpur,2591,available
+L0007,F0117,Onion,1633,Grade C,Maharashtra,Nagpur,1663,available
+L0008,F0233,Onion,1351,Grade C,Gujarat,Rajkot,1833,available
+L0009,F0137,Potato,1487,Grade A,Uttar Pradesh,Lucknow,2247,available
+L0010,F0237,Rice,827,Grade C,Uttar Pradesh,Auraiya,3110,matched
+L0011,F0118,Tomato,1733,Grade A,Bihar,Patna,2292,available
+L0012,F0291,Potato,1844,Grade C,Maharashtra,Nashik,1435,available
+L0013,F0136,Wheat,335,Grade B,Gujarat,Surat,2762,matched
+L0014,F0299,Rice,867,Grade C,Bihar,Gaya,2249,available
+L0015,F0025,Rice,1813,Grade A,Gujarat,Surat,2113,available
+L0016,F0198,Wheat,831,FAQ,Karnataka,Bengaluru Rural,2541,available
+L0017,F0059,Rice,1446,Grade C,Maharashtra,Nagpur,3112,available
+L0018,F0081,Onion,979,Grade A,Bihar,Gaya,2978,available
+L0019,F0055,Rice,1832,Grade C,Uttar Pradesh,Lucknow,3108,matched
+L0020,F0192,Rice,1611,Grade B,Uttar Pradesh,Auraiya,2904,matched
+L0021,F0251,Onion,89,Grade A,Karnataka,Belagavi,2243,available
+L0022,F0291,Tomato,1989,Grade A,Maharashtra,Nashik,1350,available
+L0023,F0066,Onion,1401,FAQ,Karnataka,Bengaluru Rural,2625,available
+L0024,F0109,Potato,1952,Grade B,Karnataka,Belagavi,2460,available
+L0025,F0265,Wheat,974,Grade A,Bihar,Gaya,2253,available
+L0026,F0284,Onion,521,Grade B,Bihar,Patna,1514,available
+L0027,F0017,Onion,1810,Grade C,Uttar Pradesh,Auraiya,1645,matched
+L0028,F0110,Tomato,1154,Grade B,Bihar,Gaya,3962,sold
+L0029,F0243,Rice,1703,FAQ,Gujarat,Surat,2189,available
+L0030,F0217,Onion,891,FAQ,Gujarat,Rajkot,2993,available
+L0031,F0174,Onion,1689,Grade A,Maharashtra,Pune,2009,available
+L0032,F0072,Tomato,914,Grade B,Karnataka,Belagavi,2140,available
+L0033,F0282,Tomato,250,Grade A,Maharashtra,Pune,3671,matched
+L0034,F0086,Onion,882,FAQ,Maharashtra,Nashik,2485,available
+L0035,F0195,Wheat,54,FAQ,Maharashtra,Nashik,2271,available
+L0036,F0080,Potato,438,Grade C,Gujarat,Rajkot,1445,available
+L0037,F0161,Rice,167,Grade A,Karnataka,Bengaluru Rural,2996,available
+L0038,F0030,Rice,1090,Grade A,Karnataka,Bengaluru Rural,2180,available
+L0039,F0121,Rice,876,Grade A,Maharashtra,Nagpur,2966,available
+L0040,F0042,Rice,908,Grade C,Karnataka,Bengaluru Rural,2334,available
+L0041,F0203,Potato,318,Grade C,Uttar Pradesh,Sitapur,1936,available
+L0042,F0289,Onion,254,Grade A,Maharashtra,Pune,2601,available
+L0043,F0179,Rice,1854,Grade A,Bihar,Patna,2300,available
+L0044,F0279,Potato,1490,Grade C,Uttar Pradesh,Sitapur,2252,matched
+L0045,F0054,Onion,1972,Grade B,Karnataka,Belagavi,2041,available
+L0046,F0140,Onion,627,Grade B,Karnataka,Bengaluru Rural,2969,available
+L0047,F0129,Tomato,1904,Grade A,Bihar,Gaya,1378,available
+L0048,F0171,Potato,1629,Grade B,Maharashtra,Nashik,2304,available
+L0049,F0288,Tomato,69,Grade A,Gujarat,Rajkot,1308,available
+L0050,F0299,Rice,1181,Grade B,Maharashtra,Pune,2680,available
+L0051,F0021,Onion,1890,Grade C,Bihar,Gaya,1930,available
+L0052,F0080,Onion,1945,Grade B,Bihar,Gaya,1832,available
+L0053,F0171,Wheat,1652,FAQ,Maharashtra,Nashik,2685,available
+L0054,F0056,Potato,833,Grade A,Uttar Pradesh,Lucknow,1963,available
+L0055,F0157,Tomato,1730,Grade B,Gujarat,Rajkot,1913,available
+L0056,F0143,Tomato,1820,Grade A,Gujarat,Rajkot,2143,available
+L0057,F0015,Rice,286,Grade C,Gujarat,Rajkot,2165,sold
+L0058,F0223,Potato,757,Grade C,Maharashtra,Nashik,1893,sold
+L0059,F0296,Rice,439,Grade C,Maharashtra,Pune,1890,available
+L0060,F0187,Onion,933,Grade A,Karnataka,Bengaluru Rural,2860,available
+L0061,F0154,Rice,1088,Grade C,Bihar,Patna,3165,available
+L0062,F0284,Potato,310,Grade B,Gujarat,Rajkot,1861,available
+L0063,F0208,Tomato,1172,Grade A,Karnataka,Belagavi,2244,available
+L0064,F0239,Tomato,954,FAQ,Gujarat,Rajkot,3767,available
+L0065,F0044,Rice,631,Grade C,Gujarat,Surat,1991,available
+L0066,F0076,Potato,100,Grade A,Uttar Pradesh,Auraiya,1501,available
+L0067,F0213,Rice,1864,Grade B,Maharashtra,Pune,2586,available
+L0068,F0003,Wheat,1878,Grade A,Uttar Pradesh,Auraiya,2797,available
+L0069,F0266,Tomato,1001,Grade A,Uttar Pradesh,Lucknow,3283,available
+L0070,F0238,Onion,1417,Grade C,Gujarat,Surat,2406,sold
+L0071,F0082,Rice,1573,FAQ,Gujarat,Rajkot,2721,available
+L0072,F0123,Tomato,612,FAQ,Bihar,Gaya,1317,available
+L0073,F0164,Tomato,1878,Grade A,Bihar,Gaya,1566,available
+L0074,F0110,Tomato,181,FAQ,Gujarat,Surat,2669,available
+L0075,F0032,Rice,473,FAQ,Gujarat,Rajkot,2597,sold
+L0076,F0245,Onion,62,Grade C,Karnataka,Belagavi,2111,available
+L0077,F0250,Wheat,499,Grade C,Karnataka,Bengaluru Rural,2446,available
+L0078,F0208,Onion,1533,Grade B,Gujarat,Rajkot,2457,available
+L0079,F0202,Rice,1262,Grade A,Karnataka,Bengaluru Rural,1971,available
+L0080,F0026,Tomato,582,FAQ,Gujarat,Surat,2340,available
+L0081,F0195,Wheat,619,FAQ,Bihar,Gaya,2258,available
+L0082,F0277,Wheat,156,Grade C,Maharashtra,Nagpur,2229,available
+L0083,F0103,Onion,1768,Grade A,Maharashtra,Nashik,2772,available
+L0084,F0059,Tomato,1205,Grade B,Uttar Pradesh,Sitapur,2904,available
+L0085,F0059,Potato,1642,Grade B,Uttar Pradesh,Lucknow,1637,available
+L0086,F0295,Rice,1437,FAQ,Maharashtra,Pune,2612,available
+L0087,F0053,Onion,1477,Grade C,Karnataka,Bengaluru Rural,2901,sold
+L0088,F0178,Onion,1141,FAQ,Karnataka,Bengaluru Rural,2854,available
+L0089,F0007,Onion,1789,FAQ,Karnataka,Belagavi,2503,available
+L0090,F0079,Wheat,941,Grade B,Bihar,Gaya,2751,matched
+L0091,F0239,Potato,942,Grade C,Karnataka,Belagavi,1660,available
+L0092,F0125,Onion,1586,FAQ,Bihar,Gaya,2667,sold
+L0093,F0254,Wheat,1792,Grade C,Bihar,Patna,2186,available
+L0094,F0175,Tomato,622,Grade C,Bihar,Gaya,3276,available
+L0095,F0124,Rice,1524,FAQ,Uttar Pradesh,Auraiya,2800,matched
+L0096,F0230,Tomato,1673,Grade A,Gujarat,Rajkot,1381,available
+L0097,F0157,Tomato,1409,Grade C,Gujarat,Surat,2938,matched
+L0098,F0282,Rice,727,Grade C,Bihar,Gaya,2729,available
+L0099,F0062,Potato,1527,Grade B,Bihar,Patna,1646,available
+L0100,F0111,Rice,1562,FAQ,Uttar Pradesh,Auraiya,2366,sold
+L0101,F0052,Rice,1755,Grade B,Karnataka,Belagavi,2406,available
+L0102,F0008,Potato,1500,Grade B,Uttar Pradesh,Sitapur,1561,available
+L0103,F0065,Onion,1356,FAQ,Karnataka,Belagavi,1710,available
+L0104,F0246,Rice,952,Grade C,Bihar,Gaya,2177,available
+L0105,F0034,Potato,870,FAQ,Gujarat,Surat,1151,sold
+L0106,F0289,Onion,1993,Grade C,Uttar Pradesh,Auraiya,1674,available
+L0107,F0116,Onion,1638,FAQ,Karnataka,Belagavi,2422,available
+L0108,F0157,Potato,1214,Grade A,Karnataka,Belagavi,2248,available
+L0109,F0042,Tomato,371,Grade B,Uttar Pradesh,Sitapur,1711,matched
+L0110,F0210,Onion,972,FAQ,Uttar Pradesh,Auraiya,2096,available
+L0111,F0233,Tomato,195,Grade B,Bihar,Gaya,2083,sold
+L0112,F0279,Tomato,510,Grade B,Gujarat,Surat,2088,available
+L0113,F0158,Onion,1268,Grade C,Maharashtra,Nashik,2399,available
+L0114,F0140,Wheat,1074,FAQ,Bihar,Gaya,2448,available
+L0115,F0166,Rice,1286,Grade C,Maharashtra,Pune,1852,available
+L0116,F0138,Tomato,1230,Grade A,Karnataka,Bengaluru Rural,1717,available
+L0117,F0093,Rice,1248,FAQ,Gujarat,Rajkot,3100,available
+L0118,F0210,Onion,732,Grade C,Gujarat,Rajkot,2872,available
+L0119,F0254,Tomato,640,FAQ,Bihar,Gaya,3253,available
+L0120,F0130,Wheat,712,Grade A,Maharashtra,Pune,2791,available
+L0121,F0278,Rice,996,FAQ,Maharashtra,Nagpur,1911,available
+L0122,F0227,Rice,1606,Grade A,Bihar,Gaya,2216,available
+L0123,F0225,Rice,1853,FAQ,Uttar Pradesh,Sitapur,2048,available
+L0124,F0082,Rice,686,Grade A,Uttar Pradesh,Lucknow,2931,available
+L0125,F0237,Onion,1989,Grade A,Uttar Pradesh,Auraiya,2826,available
+L0126,F0213,Wheat,1759,FAQ,Bihar,Gaya,2483,available
+L0127,F0197,Wheat,440,Grade B,Karnataka,Bengaluru Rural,2071,available
+L0128,F0002,Wheat,629,Grade C,Bihar,Gaya,2601,sold
+L0129,F0276,Wheat,1041,Grade C,Uttar Pradesh,Sitapur,2340,matched
+L0130,F0165,Rice,1830,Grade B,Gujarat,Rajkot,2289,sold
+L0131,F0023,Wheat,701,FAQ,Uttar Pradesh,Sitapur,2722,available
+L0132,F0019,Wheat,308,Grade C,Uttar Pradesh,Sitapur,2102,available
+L0133,F0008,Onion,1529,Grade B,Karnataka,Belagavi,2339,available
+L0134,F0174,Onion,1326,FAQ,Gujarat,Rajkot,2830,available
+L0135,F0163,Potato,1333,FAQ,Karnataka,Belagavi,2108,available
+L0136,F0148,Rice,515,Grade A,Maharashtra,Nashik,2688,available
+L0137,F0154,Onion,1900,Grade A,Gujarat,Surat,1594,available
+L0138,F0192,Onion,932,Grade B,Bihar,Gaya,2000,matched
+L0139,F0088,Wheat,408,Grade A,Karnataka,Bengaluru Rural,2624,available
+L0140,F0299,Rice,343,Grade B,Uttar Pradesh,Sitapur,2744,available
+L0141,F0239,Wheat,1895,Grade C,Bihar,Patna,2693,matched
+L0142,F0177,Tomato,1253,Grade C,Maharashtra,Pune,3617,available
+L0143,F0102,Potato,837,FAQ,Gujarat,Rajkot,1218,available
+L0144,F0295,Wheat,655,Grade C,Karnataka,Belagavi,2022,available
+L0145,F0026,Potato,1914,FAQ,Maharashtra,Nagpur,1586,available
+L0146,F0098,Rice,1321,Grade C,Bihar,Patna,3188,available
+L0147,F0226,Onion,118,Grade C,Maharashtra,Pune,2999,available
+L0148,F0213,Onion,409,Grade B,Bihar,Gaya,1770,matched
+L0149,F0085,Potato,576,FAQ,Karnataka,Belagavi,1604,available
+L0150,F0073,Onion,1594,Grade B,Gujarat,Surat,2885,available
+L0151,F0203,Rice,78,Grade C,Bihar,Patna,2898,available
+L0152,F0300,Wheat,830,Grade C,Bihar,Gaya,2110,available
+L0153,F0288,Wheat,721,Grade B,Maharashtra,Nagpur,2663,available
+L0154,F0060,Wheat,336,Grade A,Bihar,Gaya,2038,available
+L0155,F0121,Wheat,1867,Grade B,Maharashtra,Nashik,2397,available
+L0156,F0080,Potato,1863,FAQ,Karnataka,Belagavi,2341,available
+L0157,F0144,Wheat,117,Grade C,Karnataka,Belagavi,2222,available
+L0158,F0051,Wheat,1454,Grade C,Uttar Pradesh,Sitapur,2557,available
+L0159,F0098,Onion,300,FAQ,Gujarat,Rajkot,1687,available
+L0160,F0171,Rice,548,Grade B,Maharashtra,Nashik,2956,available
+L0161,F0111,Onion,1715,Grade B,Karnataka,Bengaluru Rural,2172,available
+L0162,F0075,Rice,316,Grade C,Maharashtra,Pune,2157,available
+L0163,F0184,Onion,1667,Grade B,Uttar Pradesh,Auraiya,2705,available
+L0164,F0027,Onion,309,FAQ,Uttar Pradesh,Sitapur,2577,available
+L0165,F0186,Onion,1101,Grade A,Gujarat,Rajkot,2425,matched
+L0166,F0267,Tomato,667,FAQ,Karnataka,Bengaluru Rural,3635,available
+L0167,F0219,Onion,1455,Grade A,Gujarat,Rajkot,2504,available
+L0168,F0076,Onion,184,Grade B,Maharashtra,Pune,2063,sold
+L0169,F0196,Rice,1273,Grade C,Karnataka,Belagavi,2729,matched
+L0170,F0059,Rice,1796,Grade B,Gujarat,Surat,2680,available
+L0171,F0233,Tomato,866,FAQ,Gujarat,Rajkot,3988,available
+L0172,F0131,Potato,816,Grade B,Gujarat,Rajkot,2406,available
+L0173,F0048,Onion,934,Grade A,Maharashtra,Nashik,2263,available
+L0174,F0288,Rice,1200,Grade C,Maharashtra,Nagpur,3172,available
+L0175,F0027,Wheat,639,Grade C,Bihar,Gaya,2360,available
+L0176,F0080,Rice,1394,FAQ,Karnataka,Bengaluru Rural,2259,available
+L0177,F0059,Potato,1611,Grade C,Karnataka,Belagavi,2175,available
+L0178,F0137,Wheat,109,Grade B,Karnataka,Bengaluru Rural,2279,available
+L0179,F0093,Potato,1831,Grade B,Bihar,Patna,2159,available
+L0180,F0016,Onion,237,Grade B,Uttar Pradesh,Lucknow,2270,available
+L0181,F0190,Wheat,688,Grade C,Bihar,Patna,2795,sold
+L0182,F0080,Rice,372,Grade A,Maharashtra,Nashik,3180,available
+L0183,F0249,Potato,1293,FAQ,Gujarat,Rajkot,1848,available
+L0184,F0177,Tomato,930,Grade A,Karnataka,Bengaluru Rural,2160,sold
+L0185,F0024,Wheat,501,FAQ,Karnataka,Belagavi,2613,available
+L0186,F0109,Onion,1621,Grade B,Uttar Pradesh,Sitapur,2023,available
+L0187,F0255,Potato,1579,FAQ,Maharashtra,Nashik,1359,available
+L0188,F0257,Wheat,1194,Grade C,Karnataka,Bengaluru Rural,2073,available
+L0189,F0236,Onion,1936,Grade A,Gujarat,Surat,2141,sold
+L0190,F0214,Wheat,642,Grade A,Karnataka,Belagavi,2414,available
+L0191,F0236,Potato,1753,Grade C,Uttar Pradesh,Lucknow,1180,available
+L0192,F0206,Onion,1123,Grade A,Uttar Pradesh,Sitapur,2310,available
+L0193,F0087,Potato,206,Grade A,Uttar Pradesh,Sitapur,2086,matched
+L0194,F0076,Tomato,533,Grade A,Bihar,Gaya,1599,available
+L0195,F0079,Tomato,1606,Grade A,Uttar Pradesh,Lucknow,1725,available
+L0196,F0290,Wheat,1366,Grade C,Karnataka,Belagavi,2642,available
+L0197,F0241,Tomato,955,Grade C,Gujarat,Surat,2125,sold
+L0198,F0159,Onion,995,FAQ,Bihar,Patna,1577,available
+L0199,F0047,Potato,1309,FAQ,Bihar,Patna,1947,sold
+L0200,F0293,Rice,1384,Grade B,Maharashtra,Pune,2458,sold
+L0201,F0032,Wheat,972,Grade A,Karnataka,Bengaluru Rural,2351,available
+L0202,F0127,Rice,1499,FAQ,Uttar Pradesh,Auraiya,2699,matched
+L0203,F0187,Rice,813,Grade C,Karnataka,Bengaluru Rural,2593,available
+L0204,F0172,Potato,184,Grade C,Karnataka,Bengaluru Rural,1193,matched
+L0205,F0077,Wheat,732,Grade A,Bihar,Gaya,2596,available
+L0206,F0067,Potato,1268,Grade A,Bihar,Gaya,1634,matched
+L0207,F0270,Wheat,241,FAQ,Bihar,Patna,2520,available
+L0208,F0093,Onion,1997,Grade B,Bihar,Gaya,2199,available
+L0209,F0080,Tomato,208,Grade C,Uttar Pradesh,Auraiya,1414,matched
+L0210,F0173,Rice,1844,Grade B,Karnataka,Bengaluru Rural,3023,available
+L0211,F0085,Tomato,1526,FAQ,Uttar Pradesh,Auraiya,1178,available
+L0212,F0146,Potato,1590,FAQ,Uttar Pradesh,Sitapur,1479,matched
+L0213,F0100,Tomato,803,FAQ,Bihar,Gaya,2891,available
+L0214,F0083,Wheat,1722,Grade B,Karnataka,Belagavi,2619,available
+L0215,F0247,Potato,1840,Grade C,Maharashtra,Nagpur,2135,available
+L0216,F0043,Rice,1612,Grade B,Maharashtra,Pune,2358,available
+L0217,F0047,Rice,1988,Grade B,Uttar Pradesh,Sitapur,2723,available
+L0218,F0203,Onion,1078,Grade C,Gujarat,Surat,1982,available
+L0219,F0015,Onion,702,Grade A,Bihar,Patna,2963,available
+L0220,F0147,Tomato,1928,FAQ,Uttar Pradesh,Auraiya,3851,available
+L0221,F0041,Wheat,88,Grade C,Gujarat,Surat,2220,available
+L0222,F0057,Rice,1639,Grade C,Karnataka,Belagavi,2286,available
+L0223,F0215,Onion,1358,FAQ,Maharashtra,Nashik,1628,available
+L0224,F0264,Wheat,1227,Grade B,Karnataka,Bengaluru Rural,2735,available
+L0225,F0181,Potato,542,FAQ,Gujarat,Surat,1383,available
+L0226,F0270,Rice,1164,Grade A,Bihar,Patna,2599,available
+L0227,F0130,Onion,1580,Grade A,Gujarat,Rajkot,2231,available
+L0228,F0054,Potato,1630,Grade C,Uttar Pradesh,Lucknow,1273,available
+L0229,F0090,Potato,1750,FAQ,Karnataka,Belagavi,2424,available
+L0230,F0235,Tomato,125,Grade C,Uttar Pradesh,Auraiya,1825,available
+L0231,F0159,Tomato,1105,FAQ,Maharashtra,Pune,3224,available
+L0232,F0098,Potato,635,Grade C,Maharashtra,Nagpur,1097,available
+L0233,F0224,Potato,1871,FAQ,Maharashtra,Pune,1900,available
+L0234,F0255,Potato,802,Grade C,Uttar Pradesh,Sitapur,1169,available
+L0235,F0280,Onion,651,Grade C,Gujarat,Surat,1710,available
+L0236,F0229,Potato,1284,FAQ,Bihar,Gaya,1341,available
+L0237,F0181,Potato,1309,FAQ,Gujarat,Surat,1562,available
+L0238,F0263,Onion,1690,Grade B,Gujarat,Rajkot,1563,available
+L0239,F0065,Rice,187,Grade B,Gujarat,Surat,3121,available
+L0240,F0079,Potato,1440,FAQ,Gujarat,Surat,1759,available
+L0241,F0071,Wheat,1134,Grade C,Maharashtra,Nagpur,2407,available
+L0242,F0014,Potato,1556,Grade B,Uttar Pradesh,Auraiya,2022,matched
+L0243,F0135,Wheat,1637,Grade C,Karnataka,Bengaluru Rural,2720,available
+L0244,F0252,Tomato,459,Grade A,Karnataka,Belagavi,1555,available
+L0245,F0228,Wheat,229,Grade C,Uttar Pradesh,Lucknow,2683,available
+L0246,F0154,Onion,1793,Grade B,Karnataka,Belagavi,2957,available
+L0247,F0063,Potato,461,Grade B,Karnataka,Bengaluru Rural,1484,available
+L0248,F0240,Onion,1695,Grade B,Bihar,Gaya,2753,available
+L0249,F0246,Onion,1126,FAQ,Bihar,Gaya,2338,sold
+L0250,F0038,Onion,971,FAQ,Uttar Pradesh,Sitapur,2892,matched
+L0251,F0094,Potato,1622,Grade B,Uttar Pradesh,Lucknow,1886,matched
+L0252,F0079,Onion,672,Grade B,Maharashtra,Nagpur,1831,available
+L0253,F0041,Tomato,563,Grade B,Bihar,Gaya,3601,matched
+L0254,F0156,Potato,1308,Grade A,Uttar Pradesh,Lucknow,2029,available
+L0255,F0088,Rice,1399,Grade C,Karnataka,Bengaluru Rural,2954,available
+L0256,F0296,Onion,592,Grade B,Maharashtra,Nashik,2671,available
+L0257,F0280,Rice,643,Grade C,Maharashtra,Pune,2789,available
+L0258,F0038,Wheat,1460,Grade A,Bihar,Gaya,2161,available
+L0259,F0105,Wheat,746,Grade B,Gujarat,Rajkot,2320,available
+L0260,F0190,Potato,1104,Grade A,Gujarat,Surat,1653,available
+L0261,F0231,Wheat,557,Grade B,Maharashtra,Pune,2099,available
+L0262,F0128,Potato,1822,Grade B,Gujarat,Rajkot,1670,sold
+L0263,F0256,Potato,1104,FAQ,Uttar Pradesh,Auraiya,2021,available
+L0264,F0202,Wheat,1085,FAQ,Maharashtra,Nashik,2246,available
+L0265,F0026,Rice,626,FAQ,Bihar,Patna,3023,available
+L0266,F0056,Potato,932,Grade B,Karnataka,Bengaluru Rural,1541,available
+L0267,F0206,Wheat,154,Grade B,Bihar,Patna,2371,matched
+L0268,F0259,Potato,972,Grade C,Maharashtra,Pune,2276,sold
+L0269,F0202,Onion,814,Grade C,Uttar Pradesh,Auraiya,2642,available
+L0270,F0261,Tomato,872,Grade A,Uttar Pradesh,Lucknow,1185,available
+L0271,F0266,Tomato,985,Grade B,Bihar,Gaya,3483,matched
+L0272,F0084,Tomato,854,Grade C,Bihar,Gaya,3431,available
+L0273,F0289,Rice,663,FAQ,Karnataka,Belagavi,1834,available
+L0274,F0299,Potato,680,Grade A,Maharashtra,Pune,2222,available
+L0275,F0027,Potato,1245,FAQ,Karnataka,Bengaluru Rural,1349,matched
+L0276,F0125,Rice,114,Grade A,Gujarat,Surat,2190,available
+L0277,F0078,Wheat,895,Grade B,Bihar,Gaya,2420,matched
+L0278,F0071,Rice,1112,Grade B,Gujarat,Surat,2948,available
+L0279,F0161,Wheat,404,FAQ,Karnataka,Belagavi,2545,available
+L0280,F0248,Rice,443,Grade B,Bihar,Gaya,2371,matched
+L0281,F0148,Potato,1493,Grade B,Uttar Pradesh,Sitapur,2413,available
+L0282,F0287,Potato,1962,Grade C,Gujarat,Rajkot,1589,available
+L0283,F0203,Rice,1726,Grade C,Karnataka,Belagavi,2099,available
+L0284,F0178,Onion,1942,FAQ,Bihar,Patna,2843,available
+L0285,F0276,Wheat,605,Grade C,Uttar Pradesh,Auraiya,2140,available
+L0286,F0125,Rice,153,Grade B,Karnataka,Bengaluru Rural,3106,available
+L0287,F0170,Onion,1519,FAQ,Maharashtra,Pune,1705,available
+L0288,F0209,Onion,1387,FAQ,Karnataka,Bengaluru Rural,2477,available
+L0289,F0031,Potato,1909,Grade A,Bihar,Gaya,2335,sold
+L0290,F0090,Tomato,905,Grade B,Karnataka,Bengaluru Rural,1148,available
+L0291,F0149,Wheat,1845,Grade A,Uttar Pradesh,Lucknow,2009,available
+L0292,F0172,Rice,632,FAQ,Karnataka,Bengaluru Rural,3113,matched
+L0293,F0259,Rice,1008,Grade C,Gujarat,Surat,2194,available
+L0294,F0235,Potato,1377,Grade C,Uttar Pradesh,Lucknow,2471,available
+L0295,F0291,Onion,1431,Grade B,Bihar,Gaya,1859,sold
+L0296,F0045,Wheat,870,Grade A,Gujarat,Rajkot,2189,available
+L0297,F0004,Wheat,584,FAQ,Bihar,Patna,2241,available
+L0298,F0299,Potato,1530,Grade A,Bihar,Gaya,1535,available
+L0299,F0061,Tomato,1003,Grade C,Maharashtra,Nagpur,1654,available
+L0300,F0152,Rice,802,Grade B,Bihar,Patna,2248,available
+L0301,F0192,Wheat,901,FAQ,Uttar Pradesh,Sitapur,2775,matched
+L0302,F0042,Tomato,1126,FAQ,Uttar Pradesh,Lucknow,3163,available
+L0303,F0032,Onion,1747,Grade B,Karnataka,Bengaluru Rural,2672,matched
+L0304,F0267,Tomato,954,Grade A,Uttar Pradesh,Sitapur,3786,available
+L0305,F0262,Rice,962,Grade A,Gujarat,Surat,2728,available
+L0306,F0289,Rice,168,FAQ,Gujarat,Rajkot,3177,available
+L0307,F0002,Onion,1577,Grade B,Gujarat,Rajkot,2684,available
+L0308,F0033,Onion,1158,Grade A,Gujarat,Rajkot,1641,available
+L0309,F0093,Onion,1624,Grade B,Bihar,Gaya,2813,available
+L0310,F0194,Potato,819,Grade A,Gujarat,Rajkot,2398,matched
+L0311,F0092,Tomato,1150,FAQ,Bihar,Patna,3166,available
+L0312,F0153,Tomato,998,FAQ,Maharashtra,Nashik,3178,available
+L0313,F0178,Tomato,367,Grade C,Uttar Pradesh,Sitapur,1772,available
+L0314,F0124,Onion,472,Grade A,Gujarat,Surat,1706,sold
+L0315,F0126,Onion,1566,Grade A,Gujarat,Surat,2323,available
+L0316,F0029,Tomato,336,Grade C,Karnataka,Bengaluru Rural,1959,sold
+L0317,F0122,Potato,668,Grade B,Karnataka,Belagavi,2352,matched
+L0318,F0141,Tomato,174,Grade B,Gujarat,Rajkot,3564,available
+L0319,F0177,Rice,1978,FAQ,Gujarat,Surat,2874,available
+L0320,F0154,Wheat,820,Grade B,Gujarat,Surat,2772,matched
+L0321,F0154,Wheat,1806,Grade B,Uttar Pradesh,Auraiya,2474,available
+L0322,F0286,Rice,1135,Grade B,Gujarat,Rajkot,2595,available
+L0323,F0041,Potato,1938,FAQ,Uttar Pradesh,Sitapur,1759,available
+L0324,F0138,Rice,822,Grade A,Uttar Pradesh,Auraiya,1949,available
+L0325,F0246,Rice,477,Grade C,Karnataka,Bengaluru Rural,2420,available
+L0326,F0061,Tomato,1579,FAQ,Uttar Pradesh,Lucknow,1993,sold
+L0327,F0283,Tomato,708,Grade C,Gujarat,Surat,2559,available
+L0328,F0134,Rice,786,FAQ,Bihar,Gaya,2754,available
+L0329,F0190,Wheat,690,FAQ,Bihar,Patna,2046,sold
+L0330,F0134,Tomato,1183,FAQ,Uttar Pradesh,Auraiya,2209,available
+L0331,F0195,Tomato,1216,Grade B,Bihar,Patna,3045,matched
+L0332,F0252,Potato,993,Grade B,Bihar,Gaya,2500,available
+L0333,F0280,Tomato,1050,Grade B,Uttar Pradesh,Lucknow,3220,available
+L0334,F0025,Rice,1615,Grade A,Maharashtra,Nashik,2644,available
+L0335,F0078,Tomato,68,Grade B,Maharashtra,Nagpur,3071,available
+L0336,F0248,Potato,1400,FAQ,Maharashtra,Nagpur,1032,available
+L0337,F0007,Rice,84,Grade C,Karnataka,Belagavi,2897,available
+L0338,F0092,Onion,269,Grade A,Karnataka,Belagavi,2573,available
+L0339,F0270,Tomato,566,Grade C,Uttar Pradesh,Lucknow,2094,available
+L0340,F0236,Onion,1207,Grade B,Bihar,Gaya,2927,available
+L0341,F0017,Potato,241,FAQ,Maharashtra,Nagpur,1776,available
+L0342,F0005,Rice,1489,Grade B,Gujarat,Surat,1969,available
+L0343,F0271,Wheat,1932,Grade A,Bihar,Patna,2235,available
+L0344,F0024,Rice,1942,Grade A,Gujarat,Rajkot,2374,matched
+L0345,F0162,Rice,82,Grade B,Maharashtra,Nashik,3002,available
+L0346,F0084,Wheat,1204,Grade B,Maharashtra,Pune,2580,available
+L0347,F0072,Rice,1668,Grade A,Bihar,Gaya,2825,available
+L0348,F0119,Onion,1767,Grade A,Maharashtra,Pune,2197,sold
+L0349,F0168,Rice,110,Grade C,Karnataka,Belagavi,2722,available
+L0350,F0222,Tomato,430,FAQ,Bihar,Gaya,1351,sold
+L0351,F0038,Potato,218,Grade C,Uttar Pradesh,Lucknow,1315,available
+L0352,F0185,Tomato,268,Grade A,Gujarat,Rajkot,1021,available
+L0353,F0053,Wheat,321,Grade A,Bihar,Gaya,2191,available
+L0354,F0053,Wheat,103,Grade A,Karnataka,Belagavi,2362,matched
+L0355,F0198,Onion,75,Grade C,Karnataka,Belagavi,2347,available
+L0356,F0293,Onion,1117,Grade B,Karnataka,Bengaluru Rural,2903,available
+L0357,F0155,Tomato,599,FAQ,Uttar Pradesh,Sitapur,1597,available
+L0358,F0216,Tomato,663,FAQ,Gujarat,Rajkot,1315,available
+L0359,F0254,Potato,1266,Grade B,Uttar Pradesh,Lucknow,1937,available
+L0360,F0203,Tomato,730,FAQ,Bihar,Patna,2349,available
+L0361,F0154,Potato,706,Grade B,Gujarat,Surat,1981,available
+L0362,F0150,Tomato,1555,FAQ,Gujarat,Rajkot,3358,available
+L0363,F0202,Potato,797,Grade A,Gujarat,Rajkot,2154,available
+L0364,F0282,Rice,105,FAQ,Karnataka,Bengaluru Rural,2229,available
+L0365,F0256,Potato,335,Grade C,Maharashtra,Pune,1495,available
+L0366,F0038,Tomato,969,FAQ,Gujarat,Rajkot,3384,available
+L0367,F0279,Rice,125,Grade C,Karnataka,Belagavi,2899,sold
+L0368,F0182,Onion,390,Grade A,Maharashtra,Nashik,2653,available
+L0369,F0006,Potato,251,Grade C,Gujarat,Surat,1454,matched
+L0370,F0229,Rice,816,FAQ,Karnataka,Bengaluru Rural,2748,sold
+L0371,F0013,Rice,1038,Grade A,Uttar Pradesh,Sitapur,2405,available
+L0372,F0073,Onion,763,Grade C,Maharashtra,Nagpur,2202,available
+L0373,F0179,Tomato,1025,Grade A,Karnataka,Belagavi,2794,available
+L0374,F0023,Potato,1709,Grade A,Maharashtra,Pune,1046,available
+L0375,F0125,Onion,1106,Grade B,Uttar Pradesh,Lucknow,2630,available
+L0376,F0237,Potato,524,FAQ,Karnataka,Belagavi,2289,available
+L0377,F0015,Tomato,1560,Grade B,Gujarat,Rajkot,2841,sold
+L0378,F0110,Wheat,471,Grade C,Gujarat,Surat,2770,available
+L0379,F0096,Rice,799,Grade C,Maharashtra,Nagpur,2203,available
+L0380,F0271,Onion,1358,Grade C,Bihar,Gaya,2722,available
+L0381,F0179,Rice,770,FAQ,Gujarat,Surat,3064,available
+L0382,F0069,Potato,691,Grade A,Karnataka,Bengaluru Rural,1488,available
+L0383,F0073,Onion,1096,FAQ,Uttar Pradesh,Sitapur,2356,sold
+L0384,F0217,Tomato,430,FAQ,Karnataka,Belagavi,3603,matched
+L0385,F0251,Tomato,641,Grade B,Karnataka,Bengaluru Rural,1766,available
+L0386,F0184,Wheat,1999,Grade A,Karnataka,Bengaluru Rural,2496,available
+L0387,F0210,Tomato,1452,FAQ,Gujarat,Rajkot,2702,available
+L0388,F0290,Wheat,113,Grade B,Uttar Pradesh,Auraiya,2299,available
+L0389,F0148,Potato,394,FAQ,Uttar Pradesh,Lucknow,2158,available
+L0390,F0294,Rice,283,Grade C,Karnataka,Bengaluru Rural,2912,available
+L0391,F0226,Rice,1168,Grade B,Maharashtra,Nagpur,2670,available
+L0392,F0231,Tomato,588,Grade C,Bihar,Patna,1356,available
+L0393,F0180,Onion,1813,FAQ,Uttar Pradesh,Auraiya,1839,sold
+L0394,F0031,Tomato,1217,Grade C,Uttar Pradesh,Auraiya,3180,available
+L0395,F0166,Rice,1491,Grade C,Karnataka,Bengaluru Rural,2392,sold
+L0396,F0070,Potato,1586,FAQ,Karnataka,Bengaluru Rural,1121,available
+L0397,F0075,Tomato,1506,Grade C,Uttar Pradesh,Auraiya,2013,available
+L0398,F0138,Wheat,1335,FAQ,Uttar Pradesh,Lucknow,2384,available
+L0399,F0264,Onion,1585,Grade C,Maharashtra,Pune,2922,available
+L0400,F0298,Wheat,55,Grade A,Gujarat,Rajkot,2748,available
+L0401,F0204,Potato,496,FAQ,Maharashtra,Nagpur,1433,available
+L0402,F0173,Potato,1170,Grade B,Bihar,Gaya,2159,available
+L0403,F0051,Potato,1332,FAQ,Maharashtra,Nashik,1033,available
+L0404,F0001,Tomato,926,Grade B,Gujarat,Rajkot,3820,available
+L0405,F0048,Potato,1390,Grade C,Uttar Pradesh,Sitapur,1512,available
+L0406,F0203,Potato,1331,Grade C,Uttar Pradesh,Auraiya,2486,available
+L0407,F0049,Wheat,52,Grade B,Maharashtra,Nagpur,2488,available
+L0408,F0266,Tomato,1442,FAQ,Karnataka,Bengaluru Rural,1038,available
+L0409,F0068,Potato,1028,Grade A,Maharashtra,Pune,1468,available
+L0410,F0161,Onion,802,Grade C,Maharashtra,Nashik,1780,available
+L0411,F0272,Tomato,1203,Grade A,Uttar Pradesh,Auraiya,3499,available
+L0412,F0078,Wheat,1933,FAQ,Bihar,Patna,2630,available
+L0413,F0072,Tomato,1591,Grade A,Maharashtra,Nashik,3414,available
+L0414,F0072,Potato,557,Grade C,Gujarat,Rajkot,2320,available
+L0415,F0014,Tomato,1786,Grade C,Karnataka,Belagavi,1841,matched
+L0416,F0201,Rice,655,Grade A,Karnataka,Bengaluru Rural,2290,available
+L0417,F0256,Wheat,1356,Grade A,Maharashtra,Nashik,2540,available
+L0418,F0199,Potato,1812,FAQ,Bihar,Patna,1748,matched
+L0419,F0009,Tomato,1252,Grade A,Gujarat,Surat,1056,available
+L0420,F0204,Tomato,1087,Grade C,Maharashtra,Nashik,3574,matched
+L0421,F0043,Wheat,1361,Grade B,Gujarat,Rajkot,2284,available
+L0422,F0105,Potato,1704,Grade B,Maharashtra,Nagpur,2098,available
+L0423,F0159,Wheat,1480,FAQ,Karnataka,Bengaluru Rural,2747,available
+L0424,F0223,Onion,287,FAQ,Uttar Pradesh,Auraiya,2753,sold
+L0425,F0062,Onion,75,Grade B,Bihar,Patna,2936,available
+L0426,F0268,Tomato,1109,Grade C,Gujarat,Rajkot,1683,available
+L0427,F0016,Tomato,736,FAQ,Bihar,Patna,2114,matched
+L0428,F0255,Onion,982,Grade C,Bihar,Patna,1613,available
+L0429,F0081,Rice,572,Grade A,Uttar Pradesh,Sitapur,2975,available
+L0430,F0023,Tomato,1808,Grade A,Karnataka,Bengaluru Rural,2001,available
+L0431,F0077,Wheat,416,Grade A,Bihar,Gaya,2566,available
+L0432,F0214,Tomato,1925,Grade C,Bihar,Patna,2111,available
+L0433,F0258,Rice,1428,Grade A,Bihar,Patna,2167,available
+L0434,F0036,Rice,1846,FAQ,Maharashtra,Pune,2378,available
+L0435,F0234,Potato,66,Grade C,Maharashtra,Nagpur,1410,available
+L0436,F0238,Rice,804,FAQ,Bihar,Patna,2200,matched
+L0437,F0210,Tomato,98,Grade B,Uttar Pradesh,Auraiya,3218,available
+L0438,F0193,Onion,1788,Grade C,Bihar,Patna,1712,available
+L0439,F0252,Rice,172,Grade B,Uttar Pradesh,Sitapur,2373,available
+L0440,F0212,Onion,1485,Grade C,Uttar Pradesh,Lucknow,2438,available
+L0441,F0069,Rice,1355,FAQ,Maharashtra,Nagpur,1953,sold
+L0442,F0067,Rice,534,Grade C,Maharashtra,Pune,2334,available
+L0443,F0232,Wheat,606,Grade B,Bihar,Gaya,2076,available
+L0444,F0080,Tomato,266,Grade B,Karnataka,Bengaluru Rural,2841,available
+L0445,F0275,Potato,783,Grade B,Gujarat,Surat,1925,available
+L0446,F0047,Wheat,372,Grade C,Bihar,Patna,2721,sold
+L0447,F0076,Onion,236,Grade B,Uttar Pradesh,Sitapur,2228,available
+L0448,F0154,Rice,582,Grade B,Maharashtra,Nagpur,1863,available
+L0449,F0049,Wheat,996,Grade A,Karnataka,Bengaluru Rural,2143,available
+L0450,F0067,Onion,455,FAQ,Maharashtra,Nashik,2262,available
+L0451,F0039,Rice,94,Grade A,Karnataka,Belagavi,2204,available
+L0452,F0063,Tomato,137,FAQ,Maharashtra,Pune,1207,available
+L0453,F0255,Rice,110,FAQ,Gujarat,Rajkot,3199,available
+L0454,F0096,Tomato,613,Grade C,Bihar,Patna,2826,available
+L0455,F0152,Onion,1071,FAQ,Karnataka,Bengaluru Rural,2627,available
+L0456,F0197,Onion,331,FAQ,Maharashtra,Pune,1908,matched
+L0457,F0196,Tomato,1651,Grade C,Karnataka,Bengaluru Rural,2964,matched
+L0458,F0199,Wheat,603,Grade B,Bihar,Gaya,2026,available
+L0459,F0144,Rice,169,FAQ,Uttar Pradesh,Auraiya,2884,available
+L0460,F0052,Rice,557,Grade B,Uttar Pradesh,Auraiya,2345,matched
+L0461,F0199,Onion,776,Grade B,Uttar Pradesh,Lucknow,1860,available
+L0462,F0015,Rice,1490,Grade C,Bihar,Gaya,2962,sold
+L0463,F0253,Tomato,1160,Grade C,Karnataka,Bengaluru Rural,1719,available
+L0464,F0120,Onion,1282,Grade B,Maharashtra,Nashik,1540,matched
+L0465,F0104,Wheat,1701,Grade B,Maharashtra,Pune,2348,available
+L0466,F0076,Potato,1251,Grade B,Maharashtra,Nashik,1227,matched
+L0467,F0203,Potato,1250,Grade A,Maharashtra,Pune,1689,available
+L0468,F0224,Potato,1671,FAQ,Uttar Pradesh,Auraiya,2329,available
+L0469,F0115,Tomato,1413,Grade B,Karnataka,Belagavi,2549,available
+L0470,F0001,Potato,1993,FAQ,Uttar Pradesh,Auraiya,2162,available
+L0471,F0114,Tomato,1359,Grade A,Karnataka,Belagavi,3032,available
+L0472,F0178,Potato,704,Grade B,Maharashtra,Nashik,2302,available
+L0473,F0136,Potato,479,Grade B,Gujarat,Surat,2419,available
+L0474,F0001,Potato,148,FAQ,Bihar,Patna,1897,available
+L0475,F0194,Tomato,769,FAQ,Gujarat,Rajkot,1415,available
+L0476,F0232,Rice,200,Grade A,Uttar Pradesh,Auraiya,2403,available
+L0477,F0038,Potato,750,Grade B,Bihar,Patna,1768,available
+L0478,F0174,Onion,1266,FAQ,Karnataka,Bengaluru Rural,2942,available
+L0479,F0223,Wheat,371,Grade A,Uttar Pradesh,Lucknow,2103,available
+L0480,F0284,Tomato,1528,Grade C,Uttar Pradesh,Sitapur,3705,available
+L0481,F0026,Potato,854,FAQ,Uttar Pradesh,Auraiya,1314,available
+L0482,F0045,Potato,653,FAQ,Maharashtra,Pune,1408,available
+L0483,F0150,Onion,217,FAQ,Uttar Pradesh,Auraiya,1736,available
+L0484,F0136,Wheat,236,FAQ,Gujarat,Rajkot,2189,available
+L0485,F0229,Wheat,141,Grade C,Bihar,Patna,2450,available
+L0486,F0289,Potato,176,Grade B,Uttar Pradesh,Sitapur,2426,available
+L0487,F0117,Onion,1183,Grade A,Bihar,Gaya,2292,matched
+L0488,F0294,Wheat,1855,Grade B,Karnataka,Belagavi,2487,available
+L0489,F0258,Onion,1219,Grade B,Gujarat,Surat,1746,available
+L0490,F0099,Tomato,308,Grade A,Uttar Pradesh,Auraiya,2734,available
+L0491,F0076,Wheat,1758,Grade C,Uttar Pradesh,Lucknow,2327,available
+L0492,F0283,Onion,717,Grade C,Gujarat,Rajkot,2564,available
+L0493,F0058,Onion,898,Grade B,Karnataka,Belagavi,1803,sold
+L0494,F0055,Rice,1202,Grade A,Karnataka,Bengaluru Rural,2385,matched
+L0495,F0197,Potato,1391,FAQ,Gujarat,Rajkot,2171,sold
+L0496,F0142,Wheat,875,Grade B,Maharashtra,Nashik,2633,sold
+L0497,F0170,Wheat,1464,Grade B,Maharashtra,Pune,2050,available
+L0498,F0173,Potato,1724,Grade C,Bihar,Patna,1636,available
+L0499,F0069,Wheat,665,FAQ,Maharashtra,Nashik,2792,available
+L0500,F0097,Potato,954,Grade B,Gujarat,Surat,1833,available
+L0501,F0264,Rice,1670,Grade B,Bihar,Patna,1934,available
+L0502,F0269,Rice,1850,Grade A,Gujarat,Surat,2155,available
+L0503,F0017,Tomato,984,Grade A,Maharashtra,Nashik,2476,available
+L0504,F0259,Potato,862,Grade A,Bihar,Gaya,2395,available
+L0505,F0229,Tomato,413,FAQ,Bihar,Gaya,3403,matched
+L0506,F0133,Potato,1583,Grade A,Bihar,Patna,1583,available
+L0507,F0293,Wheat,1647,Grade B,Maharashtra,Nashik,2226,available
+L0508,F0263,Tomato,91,Grade A,Bihar,Gaya,2941,available
+L0509,F0115,Tomato,566,Grade C,Karnataka,Bengaluru Rural,3919,available
+L0510,F0236,Wheat,566,Grade B,Gujarat,Rajkot,2477,available
+L0511,F0300,Rice,259,Grade A,Karnataka,Belagavi,2847,available
+L0512,F0153,Rice,1451,Grade A,Karnataka,Belagavi,2786,available
+L0513,F0142,Potato,584,Grade C,Bihar,Gaya,1385,available
+L0514,F0207,Rice,1402,Grade C,Uttar Pradesh,Auraiya,3194,available
+L0515,F0133,Onion,1907,FAQ,Gujarat,Rajkot,2328,available
+L0516,F0176,Onion,1537,Grade B,Karnataka,Bengaluru Rural,2905,matched
+L0517,F0088,Wheat,1771,Grade B,Bihar,Gaya,2300,available
+L0518,F0133,Wheat,1535,Grade B,Uttar Pradesh,Lucknow,2696,available
+L0519,F0115,Onion,1574,Grade C,Uttar Pradesh,Sitapur,2361,available
+L0520,F0238,Potato,1793,Grade A,Bihar,Gaya,1963,available
+L0521,F0242,Rice,1871,Grade B,Karnataka,Bengaluru Rural,2824,available
+L0522,F0212,Wheat,160,Grade B,Karnataka,Belagavi,2140,available
+L0523,F0074,Potato,697,Grade B,Gujarat,Rajkot,1165,available
+L0524,F0030,Potato,59,FAQ,Uttar Pradesh,Sitapur,1560,available
+L0525,F0251,Tomato,1658,Grade A,Karnataka,Bengaluru Rural,1530,sold
+L0526,F0220,Wheat,1027,FAQ,Gujarat,Rajkot,2004,available
+L0527,F0192,Rice,1995,Grade A,Uttar Pradesh,Lucknow,2459,matched
+L0528,F0003,Tomato,1333,Grade B,Maharashtra,Nagpur,1926,available
+L0529,F0197,Potato,1080,Grade C,Uttar Pradesh,Auraiya,1342,available
+L0530,F0234,Onion,1540,Grade C,Bihar,Gaya,2388,available
+L0531,F0097,Potato,387,FAQ,Gujarat,Rajkot,1039,available
+L0532,F0012,Tomato,1257,Grade B,Uttar Pradesh,Auraiya,1504,available
+L0533,F0274,Onion,1326,Grade A,Gujarat,Rajkot,2716,available
+L0534,F0060,Onion,903,FAQ,Maharashtra,Nashik,2278,available
+L0535,F0079,Rice,470,Grade A,Bihar,Gaya,2416,available
+L0536,F0071,Onion,907,Grade A,Karnataka,Belagavi,2547,sold
+L0537,F0055,Onion,1069,Grade B,Bihar,Patna,2747,available
+L0538,F0184,Potato,1490,FAQ,Karnataka,Bengaluru Rural,1604,available
+L0539,F0107,Onion,1459,FAQ,Karnataka,Belagavi,2177,available
+L0540,F0046,Onion,1907,Grade A,Maharashtra,Nagpur,2675,available
+L0541,F0039,Tomato,1531,Grade A,Maharashtra,Nagpur,2048,available
+L0542,F0238,Wheat,152,Grade A,Bihar,Gaya,2178,available
+L0543,F0219,Potato,1562,Grade A,Bihar,Gaya,1194,available
+L0544,F0088,Onion,723,Grade C,Uttar Pradesh,Lucknow,2396,sold
+L0545,F0176,Potato,424,Grade A,Maharashtra,Pune,1820,available
+L0546,F0245,Wheat,1688,FAQ,Bihar,Gaya,2664,available
+L0547,F0031,Onion,1980,Grade B,Uttar Pradesh,Lucknow,1712,available
+L0548,F0093,Rice,1301,FAQ,Gujarat,Rajkot,2534,sold
+L0549,F0250,Onion,281,FAQ,Uttar Pradesh,Sitapur,2402,available
+L0550,F0007,Onion,1492,Grade B,Bihar,Gaya,2871,available
+L0551,F0222,Rice,1405,Grade B,Karnataka,Bengaluru Rural,2786,available
+L0552,F0028,Wheat,73,Grade B,Uttar Pradesh,Lucknow,2517,available
+L0553,F0252,Wheat,706,Grade B,Uttar Pradesh,Auraiya,2338,available
+L0554,F0282,Onion,1367,FAQ,Karnataka,Bengaluru Rural,2325,available
+L0555,F0294,Onion,967,Grade A,Gujarat,Rajkot,2520,available
+L0556,F0010,Potato,260,FAQ,Maharashtra,Pune,1844,available
+L0557,F0047,Rice,1671,Grade C,Karnataka,Bengaluru Rural,2841,matched
+L0558,F0187,Tomato,1740,Grade A,Gujarat,Rajkot,1913,available
+L0559,F0187,Potato,1516,FAQ,Karnataka,Belagavi,1233,available
+L0560,F0182,Tomato,1749,Grade C,Maharashtra,Pune,3243,matched
+L0561,F0085,Potato,1058,Grade B,Maharashtra,Nashik,2468,available
+L0562,F0097,Onion,297,FAQ,Bihar,Patna,1941,available
+L0563,F0213,Tomato,145,Grade A,Bihar,Patna,2845,available
+L0564,F0256,Rice,58,Grade A,Karnataka,Bengaluru Rural,2933,available
+L0565,F0297,Rice,405,Grade B,Gujarat,Surat,2012,available
+L0566,F0259,Rice,1855,FAQ,Karnataka,Belagavi,2657,sold
+L0567,F0176,Tomato,652,FAQ,Bihar,Gaya,1546,available
+L0568,F0281,Wheat,1812,Grade C,Karnataka,Belagavi,2728,matched
+L0569,F0149,Tomato,1456,Grade C,Uttar Pradesh,Auraiya,3754,available
+L0570,F0060,Tomato,1608,Grade C,Karnataka,Belagavi,3303,available
+L0571,F0274,Rice,635,FAQ,Karnataka,Belagavi,1826,matched
+L0572,F0075,Onion,158,Grade A,Maharashtra,Pune,1909,available
+L0573,F0075,Tomato,1769,Grade A,Bihar,Gaya,3828,available
+L0574,F0184,Tomato,1717,FAQ,Karnataka,Bengaluru Rural,1419,sold
+L0575,F0288,Rice,846,Grade B,Uttar Pradesh,Lucknow,2846,available
+L0576,F0214,Onion,1664,Grade C,Gujarat,Rajkot,2630,available
+L0577,F0227,Onion,1749,Grade B,Bihar,Patna,2797,available
+L0578,F0100,Rice,652,FAQ,Karnataka,Bengaluru Rural,2163,available
+L0579,F0264,Tomato,294,FAQ,Uttar Pradesh,Lucknow,1166,available
+L0580,F0067,Potato,379,Grade C,Karnataka,Belagavi,1011,available
+L0581,F0079,Wheat,1951,Grade C,Uttar Pradesh,Auraiya,2611,available
+L0582,F0294,Rice,1176,Grade C,Bihar,Gaya,1949,available
+L0583,F0267,Rice,189,Grade B,Uttar Pradesh,Auraiya,2651,matched
+L0584,F0179,Rice,503,Grade B,Gujarat,Surat,3158,available
+L0585,F0112,Potato,1996,FAQ,Bihar,Gaya,2149,available
+L0586,F0124,Onion,1902,Grade B,Bihar,Gaya,1581,available
+L0587,F0132,Wheat,1156,Grade C,Maharashtra,Pune,2025,matched
+L0588,F0250,Potato,139,Grade C,Karnataka,Belagavi,2334,available
+L0589,F0050,Potato,392,Grade A,Karnataka,Bengaluru Rural,2283,available
+L0590,F0218,Tomato,1761,Grade A,Uttar Pradesh,Lucknow,1842,matched
+L0591,F0079,Wheat,98,FAQ,Maharashtra,Nagpur,2734,available
+L0592,F0028,Onion,414,Grade C,Maharashtra,Nashik,2642,available
+L0593,F0209,Rice,844,FAQ,Uttar Pradesh,Sitapur,3090,available
+L0594,F0200,Wheat,1428,Grade A,Bihar,Patna,2547,available
+L0595,F0300,Rice,143,Grade A,Maharashtra,Nagpur,2532,matched
+L0596,F0045,Onion,626,FAQ,Bihar,Gaya,2281,available
+L0597,F0274,Onion,500,Grade B,Gujarat,Surat,2300,matched
+L0598,F0192,Potato,1994,Grade A,Uttar Pradesh,Sitapur,2133,matched
+L0599,F0003,Tomato,1222,FAQ,Maharashtra,Nashik,3200,matched
+L0600,F0177,Onion,483,FAQ,Bihar,Patna,2822,matched
+L0601,F0114,Tomato,1313,Grade C,Uttar Pradesh,Auraiya,1795,available
+L0602,F0282,Tomato,994,Grade A,Karnataka,Bengaluru Rural,2190,available
+L0603,F0298,Potato,1047,Grade C,Maharashtra,Nashik,1731,available
+L0604,F0036,Tomato,1893,Grade B,Maharashtra,Pune,2301,available
+L0605,F0300,Wheat,362,Grade C,Bihar,Gaya,2323,available
+L0606,F0127,Tomato,1659,Grade B,Maharashtra,Pune,3917,available
+L0607,F0170,Potato,1847,FAQ,Bihar,Patna,1947,available
+L0608,F0283,Potato,272,Grade B,Bihar,Gaya,2322,sold
+L0609,F0276,Onion,452,Grade C,Bihar,Patna,2783,available
+L0610,F0016,Onion,1714,FAQ,Maharashtra,Nagpur,2708,available
+L0611,F0279,Onion,1880,FAQ,Karnataka,Belagavi,2839,available
+L0612,F0149,Potato,324,FAQ,Gujarat,Surat,2026,matched
+L0613,F0258,Onion,71,Grade B,Gujarat,Rajkot,2757,available
+L0614,F0082,Rice,416,Grade B,Uttar Pradesh,Sitapur,2790,available
+L0615,F0119,Onion,178,Grade C,Uttar Pradesh,Sitapur,2256,available
+L0616,F0185,Onion,844,FAQ,Uttar Pradesh,Lucknow,2431,available
+L0617,F0267,Onion,1347,Grade C,Bihar,Patna,2039,sold
+L0618,F0193,Rice,1388,FAQ,Karnataka,Bengaluru Rural,2548,sold
+L0619,F0193,Onion,1908,Grade B,Karnataka,Belagavi,2557,available
+L0620,F0247,Potato,1866,Grade A,Bihar,Gaya,2027,available
+L0621,F0040,Wheat,1103,Grade C,Uttar Pradesh,Auraiya,2216,available
+L0622,F0061,Tomato,1403,Grade B,Uttar Pradesh,Sitapur,2698,available
+L0623,F0246,Onion,481,Grade B,Gujarat,Rajkot,2825,available
+L0624,F0066,Onion,1224,Grade B,Uttar Pradesh,Auraiya,1775,matched
+L0625,F0029,Onion,390,Grade C,Karnataka,Bengaluru Rural,1868,matched
+L0626,F0146,Wheat,1989,Grade A,Karnataka,Bengaluru Rural,2221,available
+L0627,F0088,Rice,499,FAQ,Gujarat,Rajkot,3030,available
+L0628,F0262,Rice,591,Grade B,Uttar Pradesh,Lucknow,2501,available
+L0629,F0118,Rice,824,FAQ,Karnataka,Bengaluru Rural,2070,available
+L0630,F0259,Onion,1451,FAQ,Uttar Pradesh,Lucknow,1806,sold
+L0631,F0020,Onion,1847,Grade A,Uttar Pradesh,Sitapur,1690,available
+L0632,F0221,Tomato,1119,FAQ,Karnataka,Bengaluru Rural,2517,available
+L0633,F0247,Rice,1667,FAQ,Gujarat,Surat,2517,sold
+L0634,F0069,Rice,571,FAQ,Maharashtra,Pune,2276,available
+L0635,F0132,Potato,437,Grade A,Karnataka,Belagavi,2452,available
+L0636,F0267,Rice,64,FAQ,Karnataka,Bengaluru Rural,3140,available
+L0637,F0055,Potato,366,FAQ,Gujarat,Rajkot,2334,sold
+L0638,F0290,Potato,798,Grade C,Bihar,Gaya,2393,available
+L0639,F0092,Tomato,808,FAQ,Gujarat,Rajkot,2039,available
+L0640,F0071,Rice,1801,Grade A,Bihar,Gaya,2270,available
+L0641,F0261,Tomato,870,Grade C,Maharashtra,Nashik,3255,sold
+L0642,F0003,Onion,1697,Grade A,Uttar Pradesh,Sitapur,1797,available
+L0643,F0033,Rice,588,Grade B,Gujarat,Surat,2559,available
+L0644,F0197,Rice,1956,FAQ,Maharashtra,Nagpur,3057,matched
+L0645,F0090,Potato,1361,FAQ,Karnataka,Bengaluru Rural,1899,available
+L0646,F0100,Tomato,118,Grade B,Karnataka,Belagavi,3519,available
+L0647,F0001,Onion,372,Grade A,Bihar,Patna,2065,available
+L0648,F0103,Potato,1110,Grade A,Gujarat,Rajkot,2441,available
+L0649,F0287,Onion,1923,Grade C,Karnataka,Belagavi,2211,available
+L0650,F0233,Tomato,1954,FAQ,Karnataka,Bengaluru Rural,3354,available
+L0651,F0260,Potato,268,Grade A,Uttar Pradesh,Sitapur,2030,available
+L0652,F0132,Potato,1844,Grade C,Maharashtra,Nagpur,2421,available
+L0653,F0125,Wheat,1601,Grade C,Karnataka,Belagavi,2794,available
+L0654,F0247,Wheat,288,Grade C,Karnataka,Bengaluru Rural,2069,available
+L0655,F0212,Tomato,773,Grade A,Uttar Pradesh,Sitapur,3870,available
+L0656,F0205,Tomato,1429,Grade C,Bihar,Patna,1311,matched
+L0657,F0182,Tomato,497,Grade C,Gujarat,Rajkot,1748,available
+L0658,F0124,Wheat,1837,Grade C,Uttar Pradesh,Auraiya,2211,available
+L0659,F0183,Tomato,369,Grade A,Uttar Pradesh,Lucknow,1491,available
+L0660,F0278,Wheat,136,FAQ,Karnataka,Bengaluru Rural,2380,sold
+L0661,F0252,Potato,424,Grade C,Gujarat,Rajkot,1814,available
+L0662,F0270,Rice,1686,FAQ,Uttar Pradesh,Auraiya,2779,matched
+L0663,F0202,Onion,1812,Grade B,Karnataka,Belagavi,2436,available
+L0664,F0005,Rice,74,Grade B,Gujarat,Rajkot,2577,sold
+L0665,F0133,Onion,433,Grade C,Bihar,Gaya,1985,available
+L0666,F0188,Wheat,426,FAQ,Karnataka,Belagavi,2434,available
+L0667,F0206,Wheat,622,FAQ,Bihar,Gaya,2184,sold
+L0668,F0052,Tomato,1526,Grade C,Karnataka,Bengaluru Rural,1965,matched
+L0669,F0075,Wheat,1688,Grade B,Gujarat,Surat,2484,available
+L0670,F0069,Tomato,1879,Grade C,Gujarat,Rajkot,2993,available
+L0671,F0204,Potato,252,Grade B,Karnataka,Bengaluru Rural,1122,available
+L0672,F0231,Potato,1574,Grade C,Gujarat,Surat,1532,available
+L0673,F0177,Potato,90,FAQ,Karnataka,Belagavi,1248,available
+L0674,F0295,Rice,1380,Grade B,Uttar Pradesh,Lucknow,2382,available
+L0675,F0229,Potato,1871,Grade A,Karnataka,Belagavi,1780,sold
+L0676,F0086,Potato,1361,Grade C,Gujarat,Surat,1863,sold
+L0677,F0041,Rice,381,Grade C,Gujarat,Surat,2267,available
+L0678,F0203,Potato,605,FAQ,Bihar,Gaya,1743,sold
+L0679,F0086,Rice,426,Grade A,Gujarat,Rajkot,2056,available
+L0680,F0086,Potato,863,Grade A,Maharashtra,Nashik,1195,available
+L0681,F0014,Wheat,1628,FAQ,Karnataka,Bengaluru Rural,2536,available
+L0682,F0044,Onion,1391,FAQ,Bihar,Patna,2133,available
+L0683,F0065,Tomato,318,Grade B,Bihar,Gaya,1117,available
+L0684,F0240,Potato,1833,Grade C,Bihar,Gaya,2123,available
+L0685,F0234,Tomato,1342,FAQ,Karnataka,Bengaluru Rural,3144,matched
+L0686,F0277,Potato,515,Grade A,Bihar,Gaya,1904,available
+L0687,F0080,Potato,671,Grade A,Gujarat,Rajkot,1000,matched
+L0688,F0241,Tomato,1145,Grade A,Bihar,Gaya,3817,available
+L0689,F0221,Wheat,1684,Grade C,Bihar,Patna,2611,available
+L0690,F0097,Onion,893,FAQ,Karnataka,Belagavi,2308,available
+L0691,F0113,Tomato,588,Grade A,Gujarat,Rajkot,2729,available
+L0692,F0146,Rice,1378,Grade C,Karnataka,Belagavi,2645,available
+L0693,F0149,Onion,276,FAQ,Uttar Pradesh,Auraiya,2765,available
+L0694,F0097,Potato,706,Grade A,Karnataka,Belagavi,1311,available
+L0695,F0053,Rice,627,Grade C,Maharashtra,Nashik,2056,available
+L0696,F0078,Onion,80,FAQ,Uttar Pradesh,Auraiya,1944,available
+L0697,F0191,Wheat,999,Grade A,Bihar,Gaya,2338,available
+L0698,F0201,Tomato,196,FAQ,Maharashtra,Pune,1743,available
+L0699,F0063,Potato,1623,Grade B,Gujarat,Surat,1788,available
+L0700,F0236,Tomato,1555,Grade A,Maharashtra,Nashik,3134,available
+L0701,F0166,Wheat,374,Grade A,Gujarat,Rajkot,2762,matched
+L0702,F0247,Rice,1357,Grade C,Maharashtra,Pune,2206,available
+L0703,F0121,Onion,1346,FAQ,Uttar Pradesh,Auraiya,2164,available
+L0704,F0203,Tomato,1666,Grade B,Bihar,Patna,1036,available
+L0705,F0191,Rice,1628,Grade A,Gujarat,Surat,2309,available
+L0706,F0174,Wheat,1956,Grade A,Maharashtra,Nagpur,2061,available
+L0707,F0065,Tomato,1049,Grade B,Karnataka,Bengaluru Rural,2297,matched
+L0708,F0011,Potato,1461,FAQ,Gujarat,Surat,1733,available
+L0709,F0225,Potato,1194,Grade C,Maharashtra,Pune,2111,available
+L0710,F0279,Tomato,762,Grade C,Karnataka,Bengaluru Rural,3999,available
+L0711,F0036,Potato,1137,Grade B,Karnataka,Bengaluru Rural,1920,available
+L0712,F0233,Potato,51,FAQ,Karnataka,Belagavi,1379,available
+L0713,F0165,Rice,1526,Grade A,Bihar,Patna,3148,matched
+L0714,F0255,Wheat,1618,Grade B,Uttar Pradesh,Lucknow,2627,available
+L0715,F0057,Potato,247,Grade A,Gujarat,Rajkot,1089,available
+L0716,F0055,Tomato,1044,Grade B,Maharashtra,Nashik,1404,available
+L0717,F0270,Rice,1327,Grade C,Gujarat,Rajkot,1900,available
+L0718,F0007,Tomato,1955,Grade B,Karnataka,Bengaluru Rural,3685,available
+L0719,F0185,Onion,1192,FAQ,Gujarat,Surat,2255,available
+L0720,F0037,Rice,1758,Grade C,Bihar,Patna,1959,available
+L0721,F0119,Rice,1138,FAQ,Maharashtra,Nashik,2188,available
+L0722,F0092,Rice,1193,FAQ,Uttar Pradesh,Lucknow,2016,sold
+L0723,F0054,Potato,391,Grade B,Gujarat,Rajkot,2126,available
+L0724,F0274,Rice,1278,FAQ,Bihar,Patna,2521,available
+L0725,F0212,Rice,1615,FAQ,Bihar,Gaya,2462,sold
+L0726,F0193,Tomato,1618,Grade C,Karnataka,Bengaluru Rural,2474,available
+L0727,F0018,Wheat,632,Grade A,Gujarat,Surat,2530,available
+L0728,F0114,Potato,489,Grade C,Maharashtra,Pune,1044,available
+L0729,F0049,Rice,127,FAQ,Karnataka,Bengaluru Rural,2528,available
+L0730,F0299,Tomato,561,Grade B,Bihar,Gaya,2049,available
+L0731,F0292,Onion,1929,Grade B,Karnataka,Belagavi,1658,available
+L0732,F0296,Wheat,1728,Grade A,Uttar Pradesh,Sitapur,2609,available
+L0733,F0041,Onion,1647,Grade A,Karnataka,Belagavi,2184,available
+L0734,F0117,Wheat,1581,Grade A,Gujarat,Surat,2649,available
+L0735,F0164,Onion,1155,Grade B,Bihar,Patna,2169,matched
+L0736,F0202,Tomato,962,Grade A,Uttar Pradesh,Auraiya,1909,available
+L0737,F0068,Potato,738,Grade A,Gujarat,Surat,1974,sold
+L0738,F0135,Onion,224,FAQ,Karnataka,Belagavi,2527,available
+L0739,F0287,Tomato,455,FAQ,Uttar Pradesh,Sitapur,2619,sold
+L0740,F0125,Tomato,196,Grade C,Karnataka,Bengaluru Rural,2761,available
+L0741,F0212,Rice,917,Grade C,Maharashtra,Nashik,2513,available
+L0742,F0157,Potato,396,Grade C,Bihar,Patna,2262,available
+L0743,F0023,Rice,1942,Grade B,Uttar Pradesh,Sitapur,2208,available
+L0744,F0028,Tomato,547,Grade B,Maharashtra,Nashik,2178,available
+L0745,F0231,Potato,1014,Grade A,Maharashtra,Pune,1679,available
+L0746,F0280,Rice,1121,Grade C,Uttar Pradesh,Auraiya,2923,available
+L0747,F0010,Rice,821,Grade A,Uttar Pradesh,Lucknow,2323,available
+L0748,F0139,Onion,158,FAQ,Bihar,Patna,2840,available
+L0749,F0185,Onion,1820,Grade A,Gujarat,Rajkot,1539,available
+L0750,F0261,Wheat,1503,Grade A,Uttar Pradesh,Sitapur,2323,available
+L0751,F0096,Rice,457,FAQ,Karnataka,Bengaluru Rural,2948,available
+L0752,F0157,Onion,733,FAQ,Uttar Pradesh,Lucknow,2305,available
+L0753,F0182,Onion,1330,Grade C,Bihar,Gaya,1983,matched
+L0754,F0132,Potato,1849,FAQ,Maharashtra,Nagpur,1060,matched
+L0755,F0175,Potato,1887,FAQ,Uttar Pradesh,Auraiya,2345,available
+L0756,F0214,Onion,542,Grade B,Gujarat,Surat,2373,available
+L0757,F0278,Rice,319,Grade B,Bihar,Gaya,3136,available
+L0758,F0071,Rice,682,Grade B,Karnataka,Bengaluru Rural,2680,available
+L0759,F0035,Rice,1191,Grade A,Uttar Pradesh,Sitapur,2177,available
+L0760,F0212,Tomato,892,Grade C,Maharashtra,Pune,2814,available
+L0761,F0068,Tomato,428,Grade A,Uttar Pradesh,Auraiya,3506,sold
+L0762,F0119,Potato,522,Grade A,Karnataka,Bengaluru Rural,1735,available
+L0763,F0241,Wheat,1508,Grade C,Uttar Pradesh,Lucknow,2188,available
+L0764,F0084,Wheat,445,Grade B,Gujarat,Surat,2033,available
+L0765,F0114,Onion,1570,Grade B,Bihar,Gaya,1918,available
+L0766,F0167,Tomato,1825,FAQ,Gujarat,Rajkot,2010,available
+L0767,F0195,Wheat,1524,Grade C,Maharashtra,Nagpur,2403,sold
+L0768,F0267,Rice,273,FAQ,Karnataka,Bengaluru Rural,2735,available
+L0769,F0021,Tomato,1192,FAQ,Karnataka,Belagavi,3114,available
+L0770,F0204,Tomato,1861,Grade C,Bihar,Gaya,2171,available
+L0771,F0028,Tomato,1463,Grade B,Gujarat,Rajkot,2898,available
+L0772,F0093,Onion,1644,Grade B,Karnataka,Bengaluru Rural,2305,available
+L0773,F0092,Potato,979,Grade B,Gujarat,Surat,1931,available
+L0774,F0064,Potato,236,Grade A,Bihar,Patna,2446,available
+L0775,F0197,Potato,1538,Grade B,Maharashtra,Nagpur,1775,matched
+L0776,F0172,Wheat,1208,Grade B,Maharashtra,Nashik,2166,available
+L0777,F0158,Tomato,683,FAQ,Maharashtra,Pune,2182,available
+L0778,F0002,Onion,1325,Grade C,Uttar Pradesh,Auraiya,1525,available
+L0779,F0253,Wheat,537,Grade B,Gujarat,Surat,2602,available
+L0780,F0041,Wheat,1281,Grade A,Gujarat,Rajkot,2250,matched
+L0781,F0026,Potato,428,Grade B,Karnataka,Bengaluru Rural,1112,available
+L0782,F0296,Onion,1766,Grade C,Uttar Pradesh,Auraiya,2178,available
+L0783,F0092,Onion,380,Grade C,Maharashtra,Pune,2751,sold
+L0784,F0234,Rice,1584,Grade C,Karnataka,Bengaluru Rural,1873,available
+L0785,F0195,Potato,1729,Grade A,Bihar,Gaya,1875,matched
+L0786,F0069,Onion,299,Grade C,Bihar,Gaya,2174,matched
+L0787,F0108,Wheat,1303,Grade A,Karnataka,Bengaluru Rural,2111,sold
+L0788,F0148,Rice,924,Grade C,Maharashtra,Pune,2331,matched
+L0789,F0067,Rice,1308,FAQ,Karnataka,Belagavi,2864,available
+L0790,F0120,Wheat,1501,Grade C,Uttar Pradesh,Lucknow,2198,available
+L0791,F0061,Onion,1560,Grade B,Maharashtra,Pune,2760,available
+L0792,F0180,Wheat,1197,Grade B,Maharashtra,Pune,2011,available
+L0793,F0158,Potato,664,Grade C,Bihar,Patna,1012,available
+L0794,F0292,Potato,1311,Grade A,Bihar,Gaya,1359,available
+L0795,F0243,Potato,1682,Grade A,Bihar,Gaya,2322,available
+L0796,F0236,Wheat,1876,Grade C,Uttar Pradesh,Lucknow,2473,available
+L0797,F0290,Onion,1534,Grade C,Karnataka,Belagavi,2637,matched
+L0798,F0170,Onion,1687,Grade C,Uttar Pradesh,Lucknow,1635,available
+L0799,F0193,Potato,1333,Grade B,Maharashtra,Pune,2169,sold
+EDGE_LOT_PERFECT,F_EDGE1,Onion,500,Grade A,Maharashtra,Nashik,2200,available
+EDGE_LOT_UNKNOWNGRADE,F_EDGE2,Wheat,800,Grade X-Special,Uttar Pradesh,Lucknow,2400,available
+EDGE_LOT_TINY,F_EDGE3,Potato,20,Grade A,Gujarat,Surat,1800,available
+EDGE_LOT_HUGE,F_EDGE4,Rice,10000,FAQ,Bihar,Gaya,2000,available
+EDGE_LOT_EXPENSIVE,F_EDGE5,Tomato,500,Grade A,Karnataka,Belagavi,8000,available
+EDGE_AGG_MAIN,F_AGGMAIN,Onion,200,Grade A,Maharashtra,Nashik,2200,available
+EDGE_AGG_PARTNER0,F_AGGPARTNER0,Onion,300,Grade A,Maharashtra,Nashik,2150,available
+EDGE_AGG_PARTNER1,F_AGGPARTNER1,Onion,400,Grade A,Maharashtra,Pune,2150,available
+EDGE_AGG_PARTNER2,F_AGGPARTNER2,Onion,250,FAQ,Maharashtra,Nashik,2150,available
+EDGE_AGG_PARTNER3,F_AGGPARTNER3,Onion,500,Grade C,Maharashtra,Nashik,2150,available
+EDGE_AGG_SAMEFARMER,F_AGGMAIN,Onion,2000,Grade A,Maharashtra,Nashik,2200,available
+EDGE_AGG_SOLDLOT,F_AGGSOLD,Onion,2000,Grade A,Maharashtra,Nashik,2200,sold
+EDGE_AGG_SHORTFALL_MAIN,F_SHORTMAIN,Rice,50,FAQ,Bihar,Patna,1900,available
+EDGE_AGG_SHORTFALL_PARTNER,F_SHORTPARTNER,Rice,60,FAQ,Bihar,Patna,1900,available
