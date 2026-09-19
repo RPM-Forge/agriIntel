@@ -340,6 +340,7 @@ function Sparkline({ points, up }: { points: number[]; up: boolean }) {
     const y = h - 5 - ((p - min) / range) * (h - 16);
     return [x.toFixed(1), y.toFixed(1)] as const;
   });
+  
   const line = coords.map(([x, y], i) => `${i === 0 ? "M" : "L"}${x},${y}`).join(" ");
   const area = `${line} L${w},${h} L0,${h} Z`;
   const stroke = up ? "var(--green-600)" : "var(--red-600)";
@@ -358,7 +359,18 @@ function Sparkline({ points, up }: { points: number[]; up: boolean }) {
 /* Data                                                               */
 /* ------------------------------------------------------------------ */
 
-const COMMODITIES = ["Wheat", "Rice", "Maize", "Potato", "Onion", "Tomato", "Cotton"];
+const COMMODITIES = ["Wheat", "Rice", "Potato", "Onion", "Tomato"];
+
+/** Crops the live model actually has enough history for in these landing-page states. */
+const COMMODITIES_BY_STATE: Record<string, string[]> = {
+  Delhi: ["Wheat", "Rice", "Potato", "Onion", "Tomato"],
+  Haryana: ["Wheat", "Potato", "Onion", "Tomato"],
+  "Uttar Pradesh": ["Wheat", "Rice", "Potato", "Onion", "Tomato"],
+  Rajasthan: ["Wheat", "Potato", "Onion", "Tomato"],
+  "Madhya Pradesh": ["Wheat", "Potato", "Onion", "Tomato"],
+  Punjab: ["Wheat", "Potato", "Onion", "Tomato"],
+  Maharashtra: ["Wheat", "Rice", "Potato", "Onion", "Tomato"],
+};
 
 const STATES: Record<string, string[]> = {
   Delhi: ["New Delhi", "South Delhi", "Narela", "Najafgarh"],
@@ -370,7 +382,7 @@ const STATES: Record<string, string[]> = {
   Maharashtra: ["Nashik", "Pune", "Nagpur", "Akola"],
 };
 
-const GRADES = ["Grade A", "Grade B", "Grade C", "Grade D"];
+const GRADES = ["Grade A", "Grade B", "Grade C", "FAQ"];
 
 interface OptionRow {
   icon: IconName;
@@ -515,33 +527,35 @@ function parsePrediction(
     return { ok: true, title: `Price insight for ${title}`, lines: [String(raw)] };
   }
 
-  const priceKeys = [
-    "predicted_price",
-    "predictedPrice",
-    "predicted_price_per_quintal",
-    "expected_price",
-    "estimated_price",
-    "suggested_price",
-    "price",
-    "quote",
-  ];
-  const textKeys = ["summary", "message", "insight", "demand", "trend", "recommendation", "info", "notes"];
+  if (typeof raw.error === "string" && raw.error.trim()) {
+    return { ok: false, title: `Couldn't fetch rates for ${title}`, lines: [raw.error.trim()] };
+  }
+  if (typeof raw.detail === "string" && raw.detail.trim()) {
+    return { ok: false, title: `Couldn't fetch rates for ${title}`, lines: [raw.detail.trim()] };
+  }
+
+  const expected =
+    formatAmount(raw.local_predicted_price) ??
+    formatAmount(raw.predicted_price) ??
+    formatAmount(raw.predictedPrice) ??
+    formatAmount(raw.expected_price);
+  const today = formatAmount(raw.today_actual_price);
+  const advice = typeof raw.recommendation === "string" ? raw.recommendation.trim() : "";
 
   const lines: string[] = [];
-  for (const key of priceKeys) {
-    if (raw[key] == null || raw[key] === "") continue;
-    const amount = formatAmount(raw[key]);
-    if (amount) lines.push(`Expected price ≈ ₹${amount} per quintal.`);
-  }
-  for (const key of textKeys) {
-    if (typeof raw[key] === "string" && raw[key].trim() !== "") lines.push(raw[key].trim());
-  }
+  if (expected) lines.push(`Expected price: ₹${expected} per quintal.`);
+  if (today) lines.push(`Today's mandi rate: ₹${today} per quintal.`);
+  if (advice) lines.push(advice);
 
   if (lines.length === 0) {
-    lines.push("The service returned a response — details below.");
+    return {
+      ok: false,
+      title: `No expected price for ${title}`,
+      lines: ["The model responded, but no price field was found."],
+    };
   }
 
-  return { ok: true, title: `Price insight for ${title}`, lines, raw: JSON.stringify(raw, null, 2) };
+  return { ok: true, title: `Price insight for ${title}`, lines };
 }
 
 /* ------------------------------------------------------------------ */
@@ -628,7 +642,10 @@ function Hero() {
     (key: "state" | "district" | "commodity" | "grade") => (value: string) => {
       setForm((f) => {
         const next = { ...f, [key]: value };
-        if (key === "state") next.district = "";
+        if (key === "state") {
+          next.district = "";
+          next.commodity = "";
+        }
         return next;
       });
       setErrorText("");
@@ -753,11 +770,13 @@ function Hero() {
                   aria-invalid={!form.commodity && errorText !== ""}
                 >
                   <option value="">Select Commodity</option>
-                  {COMMODITIES.map((commodity) => (
-                    <option key={commodity} value={commodity}>
-                      {commodity}
-                    </option>
-                  ))}
+                  {(form.state ? (COMMODITIES_BY_STATE[form.state] ?? COMMODITIES) : COMMODITIES).map(
+                    (commodity) => (
+                      <option key={commodity} value={commodity}>
+                        {commodity}
+                      </option>
+                    ),
+                  )}
                 </select>
               </div>
 
