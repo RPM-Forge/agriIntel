@@ -619,11 +619,11 @@ function Header() {
                 EN
               </button>
             </div>
-            <a className="nav__login" href="#top">
+            <a className="nav__login" href="/auth">
               Login
             </a>
-            <a className="btn btn--lime btn--sm" href="#live-prices">
-              Start Now
+            <a className="btn btn--lime btn--sm" href="/auth">
+              Sign In
             </a>
           </div>
         </nav>
