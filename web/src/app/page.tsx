@@ -1,7 +1,7 @@
 "use client";
 
 import type { FormEvent, ReactNode } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { getPricePrediction } from "@/lib/priceClient";
 
 /* ------------------------------------------------------------------ */
@@ -361,6 +361,37 @@ function Sparkline({ points, up }: { points: number[]; up: boolean }) {
 
 const COMMODITIES = ["Wheat", "Rice", "Potato", "Onion", "Tomato"];
 
+const MARKET_LOCATIONS: Record<string, string[]> = {
+  "Andaman and Nicobar": ["North and Middle Andaman"],
+  "Andhra Pradesh": ["Annamayya", "Chittor", "Krishna", "Kurnool", "NTR", "Visakhapatnam", "YSR Kadapa"],
+  "Assam": ["Barpeta", "Cachar", "Darrang", "Dhemaji", "Dhubri", "Goalpara", "Golaghat", "Hailakandi", "Hojai", "Jorhat", "Kamrup", "Karbi Anglong", "Karimganj", "Kokrajhar", "Lakhimpur", "MORIGAON", "Nagaon", "Nalbari", "Sibsagar", "Sonitpur", "Tinsukia"],
+  "Bihar": ["Araria", "Banka", "Begusarai", "Bhojpur", "Buxar", "Chhapra", "Darbhanga", "East Champaran/ Motihari", "Jamui", "Jehanabad", "Kaithar", "Khagaria", "Kishanganj", "Madhepura", "Madhubani", "Muzaffarpur", "Patna", "Purnea", "Rohtas", "Saharsa", "Samastipur", "Sheikhpura", "Sheohar", "Supaul", "Vaishali"],
+  "Chandigarh": ["Chandigarh"],
+  "Chattisgarh": ["Balodabazar", "Balrampur", "Bemetara", "Bilaspur", "Durg", "Janjgir", "Jashpur", "Kabirdham", "Khairagarh Chhuikhadan Gandai", "Koria", "Mungeli", "Raigarh", "Raipur", "Rajnandgaon", "Surajpur", "Surguja"],
+  "Goa": ["North Goa"],
+  "Gujarat": ["Ahmedabad", "Amreli", "Anand", "Banaskanth", "Bharuch", "Bhavnagar", "Botad", "Dahod", "Devbhumi Dwarka", "Gandhinagar", "Gir Somnath", "Jamnagar", "Junagarh", "Kachchh", "Kheda", "Mehsana", "Morbi", "Navsari", "Panchmahals", "Patan", "Porbandar", "Rajkot", "Sabarkantha", "Surat", "Surendranagar", "Vadodara(Baroda)"],
+  "Haryana": ["Ambala", "Bhiwani", "Faridabad", "Fatehabad", "Gurgaon", "Hissar", "Jhajar", "Jind", "Kaithal", "Karnal", "Kurukshetra", "Mahendragarh-Narnaul", "Mewat", "Palwal", "Panchkula", "Panipat", "Rewari", "Rohtak", "Sirsa", "Sonipat", "Yamuna Nagar"],
+  "Himachal Pradesh": ["Bilaspur", "Chamba", "Hamirpur", "Kangra", "Kullu", "Mandi", "Shimla", "Sirmore", "Solan", "Una"],
+  "Jammu and Kashmir": ["Anantnag", "Jammu", "Kathua", "Rajouri", "Srinagar", "Udhampur"],
+  "Karnataka": ["Bagalkot", "Bangalore", "Belagavi", "Belgaum", "Bellary", "Bengaluru", "Bengaluru Rural", "Bengaluru South", "Bidar", "Bijapur", "Chamarajanagar", "Chamrajnagar", "Chikkaballapur", "Chikkamagaluru", "Chikmagalur", "Chitradurga", "Dakshina Kannada", "Davangere", "Dharwad", "Gadag", "Hassan", "Haveri", "Kalaburagi", "Kalburgi", "Karwar(Uttar Kannad)", "Kodagu", "Kolar", "Koppal", "Madikeri(Kodagu)", "Mandya", "Mangalore(Dakshin Kannad)", "Mysore", "Mysuru"],
+  "Kerala": ["Alappuzha", "Ernakulam", "Idukki", "Kannur", "Kasargod", "Kollam", "Kottayam", "Kozhikode(Calicut)", "Malappuram", "Palakad", "Thirssur", "Thiruvananthapuram"],
+  "Madhya Pradesh": ["Agar Malwa", "Alirajpur", "Anupur", "Ashoknagar", "Badwani", "Balaghat", "Betul", "Bhind", "Bhopal", "Burhanpur", "Chhatarpur", "Chhindwara", "Damoh", "Datia", "Dewas", "Dhar", "Dindori", "Guna", "Gwalior", "Harda", "Hoshangabad", "Indore", "Jabalpur", "Jhabua", "Katni", "Khandwa", "Khargone", "Mandla", "Mandsaur", "Morena", "Narsinghpur", "Neemuch", "Panna"],
+  "Maharashtra": ["Ahilyanagar", "Ahmednagar", "Akola", "Amarawati", "Beed", "Bhandara", "Buldhana", "Chandrapur", "Chattrapati Sambhajinagar", "Dharashiv", "Dharashiv(Usmanabad)", "Dhule", "Hingoli", "Jalana", "Jalgaon", "Jalna", "Kolhapur", "Latur", "Mumbai", "Nagpur", "Nanded", "Nandurbar", "Nashik", "Palghar", "Parbhani", "Pune", "Raigad", "Ratnagiri", "Sangli", "Satara", "Sholapur", "Solapur", "Thane"],
+  "Manipur": ["Bishnupur", "Imphal East", "Imphal West", "Kakching", "Thoubal"],
+  "Meghalaya": ["East Khasi Hills", "West Garo Hills", "West Jaintia Hills", "West Khasi Hills"],
+  "NCT of Delhi": ["Delhi"],
+  "Nagaland": ["Kiphire", "Kohima", "Longleng", "Mokokchung", "Phek", "Tuensang", "Wokha", "Zunheboto"],
+  "Odisha": ["Angul", "Balasore", "Bargarh", "Bhadrak", "Bolangir", "Boudh", "Cuttack", "Dhenkanal", "Gajapati", "Ganjam", "Jagatsinghpur", "Jajpur", "Jharsuguda", "Kalahandi", "Kendrapara", "Keonjhar", "Khurda", "Koraput", "Malkangiri", "Mayurbhanja", "Nayagarh", "Nowarangpur", "Nuapada", "Puri", "Rayagada", "Sambalpur", "Sonepur", "Sundergarh"],
+  "Punjab": ["Amritsar", "Barnala", "Bhatinda", "Faridkot", "Fatehgarh", "Fazilka", "Ferozpur", "Gurdaspur", "Hoshiarpur", "Jalandhar", "Kapurthala", "Ludhiana", "Mansa", "Moga", "Mohali", "Muktsar", "Nawanshahr", "Pathankot", "Patiala", "Ropar (Rupnagar)", "Sangrur", "Tarntaran", "kapurthala"],
+  "Rajasthan": ["Ajmer", "Alwar", "Anupgarh", "Balotra", "Baran", "Beawar", "Bharatpur", "Bhilwara", "Bikaner", "Bundi", "Chittorgarh", "Churu", "Dausa", "Deedwana Kuchaman", "Deeg", "Dholpur", "Dudu", "Dungarpur", "Ganganagar", "Gangapur City", "Hanumangarh", "Jaipur", "Jaipur Rural", "Jaisalmer", "Jalore", "Jhalawar", "Jhunjhunu", "Jodhpur", "Jodhpur Rural", "Karauli", "Kekri", "Khairthal Tijara", "Kota"],
+  "Tamil Nadu": ["Ariyalur", "Chengalpattu", "Coimbatore", "Cuddalore", "Dharmapuri", "Dindigul", "Erode", "Kallakuruchi", "Kancheepuram", "Karur", "Krishnagiri", "Madurai", "Nagapattinam", "Nagercoil (Kannyiakumari)", "Namakkal", "Perambalur", "Pudukkottai", "Ramanathapuram", "Ranipet", "Salem", "Sivaganga", "Tenkasi", "Thanjavur", "The Nilgiris", "Theni", "Thiruchirappalli", "Thirunelveli", "Thirupathur", "Thirupur", "Thiruvannamalai", "Thiruvarur", "Thiruvellore", "Tuticorin"],
+  "Telangana": ["Adilabad", "Hanmakonda", "Hanumakonda", "Hyderabad", "Karimnagar", "Khammam", "Mahbubnagar", "Medak", "Medchal Malkajgiri", "Nagarkurnool", "Nalgonda", "Ranga Reddy", "Sangareddy", "Siddipet", "Warangal"],
+  "Tripura": ["Dhalai", "Gomati", "Khowai", "North Tripura", "Sepahijala", "South District", "South Tripura", "Unokoti", "West District"],
+  "Uttar Pradesh": ["Agra", "Aligarh", "Ambedkarnagar", "Amethi", "Amroha", "Auraiya", "Ayodhya", "Azamgarh", "Badaun", "Baghpat", "Bahraich", "Ballia", "Balrampur", "Banda", "Barabanki", "Bareilly", "Basti", "Bhadohi(Sant Ravi Nagar)", "Bijnor", "Bulandshahar", "Chandauli", "Chitrakut", "Deoria", "Etah", "Etawah", "Farukhabad", "Fatehpur", "Firozabad", "Gautam Budh Nagar", "Ghaziabad", "Ghazipur", "Gonda", "Gorakhpur"],
+  "Uttarakhand": ["Champawat", "Dehradoon", "Garhwal (Pauri)", "Haridwar", "Nanital", "UdhamSinghNagar", "Udhamsinghnagar"],
+  "West Bengal": ["Alipurduar", "Bankura", "Birbhum", "Burdwan", "Coochbehar", "Dakshin Dinajpur", "Darjeeling", "Hooghly", "Howrah", "Jalpaiguri", "Jhargram", "Kalimpong", "Kolkata", "Malda", "Medinipur(E)", "Medinipur(W)", "Murshidabad", "Nadia", "North 24 Parganas", "Paschim Bardhaman", "Purba Bardhaman", "Puruliya", "Sounth 24 Parganas", "Uttar Dinajpur"],
+};
+
 /** Crops the live model actually has enough history for in these landing-page states. */
 const COMMODITIES_BY_STATE: Record<string, string[]> = {
   Delhi: ["Wheat", "Rice", "Potato", "Onion", "Tomato"],
@@ -370,16 +401,6 @@ const COMMODITIES_BY_STATE: Record<string, string[]> = {
   "Madhya Pradesh": ["Wheat", "Potato", "Onion", "Tomato"],
   Punjab: ["Wheat", "Potato", "Onion", "Tomato"],
   Maharashtra: ["Wheat", "Rice", "Potato", "Onion", "Tomato"],
-};
-
-const STATES: Record<string, string[]> = {
-  Delhi: ["New Delhi", "South Delhi", "Narela", "Najafgarh"],
-  Haryana: ["Karnal", "Sonipat", "Panipat", "Kaithal", "Ambala", "Gurugram"],
-  "Uttar Pradesh": ["Meerut", "Lucknow", "Agra", "Kanpur", "Varanasi", "Bareilly"],
-  Rajasthan: ["Jaipur", "Jodhpur", "Kota", "Bikaner", "Ganganagar"],
-  "Madhya Pradesh": ["Indore", "Bhopal", "Ujjain", "Ratlam", "Gwalior"],
-  Punjab: ["Ludhiana", "Amritsar", "Patiala", "Bathinda"],
-  Maharashtra: ["Nashik", "Pune", "Nagpur", "Akola"],
 };
 
 const GRADES = ["Grade A", "Grade B", "Grade C", "FAQ"];
@@ -411,19 +432,25 @@ const STATS: { num: string; label: string }[] = [
   { num: "340+", label: "Markets Covered" },
 ];
 
-const MARKET_CARDS: {
+const MARKET_CARD_QUERIES = [
+  { crop: "Rice", state: "Uttar Pradesh", district: "Agra" },
+  { crop: "Wheat", state: "Madhya Pradesh", district: "Agar Malwa" },
+  { crop: "Onion", state: "Maharashtra", district: "Ahilyanagar" },
+] as const;
+
+const DEFAULT_MARKET_CARDS: {
   crop: string;
-  price: string;
-  change: string;
+  price: string | null;
+  change: string | null;
   up: boolean;
   points: number[];
   status: string;
   warn?: boolean;
   insight: string;
 }[] = [
-  { crop: "Soybean", price: "4,820", change: "3.8%", up: true, points: [10, 14, 12, 17, 15, 20, 24], status: "Demand rising", insight: "Buyers active in Indore & Delhi" },
-  { crop: "Wheat", price: "2,240", change: "1.4%", up: false, points: [24, 21, 22, 19, 20, 18, 17], status: "Stable demand", warn: true, insight: "Mandi arrivals steady this week" },
-  { crop: "Onion", price: "1,850", change: "5.2%", up: true, points: [8, 12, 10, 15, 19, 22, 30], status: "Demand rising", insight: "Short supply in northern mandis" },
+  { crop: "Rice", price: null, change: null, up: true, points: [10, 14, 12, 17, 15, 20, 24], status: "Loading live rate", insight: "Fetching model data…" },
+  { crop: "Wheat", price: null, change: null, up: true, points: [24, 21, 22, 19, 20, 18, 17], status: "Loading live rate", insight: "Fetching model data…" },
+  { crop: "Onion", price: null, change: null, up: true, points: [8, 12, 10, 15, 19, 22, 30], status: "Loading live rate", insight: "Fetching model data…" },
 ];
 
 const FEATURES: { icon: IconName; title: string; text: string; orange?: boolean }[] = [
@@ -563,8 +590,6 @@ function parsePrediction(
 /* ------------------------------------------------------------------ */
 
 function Header() {
-  const [lang, setLang] = useState<"en" | "hi">("en");
-
   return (
     <header className="site-header">
       <div className="container">
@@ -579,46 +604,7 @@ function Header() {
             </span>
           </a>
 
-          <ul className="nav__links">
-            <li>
-              <a className="nav__link" href="#live-prices">
-                Live Prices
-              </a>
-            </li>
-            <li>
-              <a className="nav__link" href="#selling">
-                Find Buyer
-              </a>
-            </li>
-            <li>
-              <a className="nav__link" href="#logistics">
-                Logistics
-              </a>
-            </li>
-            <li>
-              <a className="nav__link" href="#about">
-                About
-              </a>
-            </li>
-          </ul>
-
           <div className="nav__actions">
-            <div className="nav__lang" role="group" aria-label="Language">
-              <button
-                type="button"
-                className={`nav__lang-btn${lang === "hi" ? " is-active" : ""}`}
-                onClick={() => setLang("hi")}
-              >
-                हिंदी
-              </button>
-              <button
-                type="button"
-                className={`nav__lang-btn${lang === "en" ? " is-active" : ""}`}
-                onClick={() => setLang("en")}
-              >
-                EN
-              </button>
-            </div>
             <a className="nav__login" href="#top">
               Login
             </a>
@@ -634,6 +620,7 @@ function Header() {
 
 function Hero() {
   const [form, setForm] = useState({ state: "", district: "", commodity: "", grade: "" });
+  const states = MARKET_LOCATIONS;
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<RateResult | null>(null);
   const [errorText, setErrorText] = useState("");
@@ -726,7 +713,7 @@ function Hero() {
                   aria-invalid={!form.state && errorText !== ""}
                 >
                   <option value="">Select State</option>
-                  {Object.keys(STATES).map((state) => (
+                  {Object.keys(states).map((state) => (
                     <option key={state} value={state}>
                       {state}
                     </option>
@@ -750,7 +737,7 @@ function Hero() {
                     {form.state ? "Select District" : "Select State first"}
                   </option>
                   {form.state &&
-                    (STATES[form.state] ?? []).map((district) => (
+                    (states[form.state] ?? []).map((district) => (
                       <option key={district} value={district}>
                         {district}
                       </option>
@@ -954,6 +941,46 @@ function Stats() {
 }
 
 function MarketIntelligence() {
+  const [cards, setCards] = useState(DEFAULT_MARKET_CARDS);
+
+  useEffect(() => {
+    let active = true;
+    Promise.all(
+      MARKET_CARD_QUERIES.map(async (query, index) => {
+        try {
+          const response = await getPricePrediction({
+            commodity: query.crop,
+            state: query.state,
+            district: query.district,
+            grade: "FAQ",
+          });
+          const data = isRecord(response.data) ? response.data : {};
+          const price = formatAmount(data.today_actual_price);
+          return {
+            index,
+            price,
+            status: price ? "Live model rate" : "Rate unavailable",
+            insight: price ? `${query.district} · ${query.state}` : "Try again shortly",
+            warn: !price,
+          };
+        } catch {
+          return { index, price: null, status: "Rate unavailable", insight: "Try again shortly", warn: true };
+        }
+      }),
+    ).then((updates) => {
+      if (!active) return;
+      setCards((current) =>
+        current.map((card, index) => {
+          const update = updates.find((item) => item.index === index);
+          return update ? { ...card, ...update } : card;
+        }),
+      );
+    });
+    return () => {
+      active = false;
+    };
+  }, []);
+
   return (
     <section className="section" id="live-prices">
       <div className="container">
@@ -971,7 +998,7 @@ function MarketIntelligence() {
         />
 
         <div className="market__grid">
-          {MARKET_CARDS.map((card) => (
+          {cards.map((card) => (
             <article className="market-card" key={card.crop}>
               <div className="market-card__top">
                 <span className="market-card__name">
@@ -980,13 +1007,15 @@ function MarketIntelligence() {
                   </span>
                   {card.crop}
                 </span>
-                <span className={`change ${card.up ? "change--up" : "change--down"}`}>
-                  <Icon name={card.up ? "arrowUp" : "arrowDown"} size={14} />
-                  {card.change}
-                </span>
+                {card.change && (
+                  <span className={`change ${card.up ? "change--up" : "change--down"}`}>
+                    <Icon name={card.up ? "arrowUp" : "arrowDown"} size={14} />
+                    {card.change}
+                  </span>
+                )}
               </div>
               <div className="market-card__price">
-                ₹{card.price}
+                {card.price ? `₹${card.price}` : "—"}
                 <small> / quintal</small>
               </div>
               <div className="market-card__chart">
