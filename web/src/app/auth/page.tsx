@@ -1,7 +1,7 @@
 "use client";
 
 import type { FormEvent, ReactNode } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
@@ -59,9 +59,10 @@ const ICONS: Record<string, ReactNode> = {
 interface AuthUser {
   id?: string;
   name: string;
-  email: string;
-  phone?: string;
+  email?: string;
+  phone: string;
   role?: "buyer" | "seller";
+  verified?: boolean;
 }
 
 interface AuthResponse {
@@ -88,6 +89,22 @@ export default function AuthPage() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState<AuthUser | null>(null);
 
+  useEffect(() => {
+    let active = true;
+
+    void fetch("/api/auth/me")
+      .then((res) => {
+        if (res.ok && active) router.replace("/");
+      })
+      .catch(() => {
+        // An unavailable session endpoint should not prevent login or signup.
+      });
+
+    return () => {
+      active = false;
+    };
+  }, [router]);
+
   const switchMode = (next: Mode) => {
     setMode(next);
     setError("");
@@ -102,7 +119,8 @@ export default function AuthPage() {
   const validate = (): string => {
     if (mode === "signup") {
       if (!form.name.trim()) return "Please enter your name.";
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim())) {
+      if (!form.phone.trim()) return "Please enter your phone number.";
+      if (form.email.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim())) {
         return "Please enter a valid email address.";
       }
       if (!/^(?=.*[A-Za-z])(?=.*\d).{8,}$/.test(form.password)) {
@@ -111,10 +129,7 @@ export default function AuthPage() {
       if (form.password !== form.confirmPassword) return "Passwords do not match.";
       return "";
     }
-    if (!form.email.trim() || !form.password) return "Please enter your email and password.";
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim())) {
-      return "Please enter a valid email address.";
-    }
+    if (!form.email.trim() || !form.password) return "Please enter your email or phone number and password.";
     return "";
   };
 
@@ -129,15 +144,16 @@ export default function AuthPage() {
     setLoading(true);
     setError("");
     try {
-      const res = await fetch(`/api/auth/${mode}`, {
+      const endpoint = mode === "login" ? "login" : "register";
+      const res = await fetch(`/api/auth/${endpoint}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(
           mode === "login"
-            ? { email: form.email.trim(), password: form.password }
+            ? { identifier: form.email.trim(), password: form.password }
             : {
                 name: form.name.trim(),
-                email: form.email.trim(),
+                email: form.email.trim() || undefined,
                 phone: form.phone.trim(),
                 password: form.password,
                 confirmPassword: form.confirmPassword,
@@ -150,7 +166,13 @@ export default function AuthPage() {
         setError(payload.error || "Something went wrong. Please try again.");
         return;
       }
-      setSuccess(payload.user ?? { name: "Farmer", email: form.email.trim() });
+      setSuccess(
+        payload.user ?? {
+          name: "Farmer",
+          email: form.email.trim() || undefined,
+          phone: form.phone.trim(),
+        },
+      );
     } catch {
       setError("Couldn't reach the server. Please try again in a moment.");
     } finally {
@@ -244,7 +266,7 @@ export default function AuthPage() {
                 </h2>
                 <p className="auth__card-sub">
                   {mode === "login"
-                    ? "Enter your email and password to continue."
+                    ? "Enter your email or phone number and password to continue."
                     : "Select how you want to use Agri Intel — you can change this later."}
                 </p>
 
@@ -302,16 +324,17 @@ export default function AuthPage() {
 
                 <div className="field">
                   <label className="field__label" htmlFor="auth-email">
-                    Email
+                    {mode === "login" ? "Email or Phone" : "Email"}{" "}
+                    {mode === "signup" && <span className="field__optional">(optional)</span>}
                   </label>
                   <div className="field__control">
-                    <span className="field__icon">{ICONS.mail}</span>
+                    <span className="field__icon">{mode === "login" ? ICONS.phone : ICONS.mail}</span>
                     <input
                       id="auth-email"
                       className="field__input"
-                      type="email"
-                      autoComplete="email"
-                      placeholder="you@gmail.com"
+                      type={mode === "login" ? "text" : "email"}
+                      autoComplete={mode === "login" ? "username" : "email"}
+                      placeholder={mode === "login" ? "you@gmail.com or phone number" : "you@gmail.com"}
                       value={form.email}
                       onChange={(e) => setField("email")(e.target.value)}
                     />
@@ -321,7 +344,7 @@ export default function AuthPage() {
                 {mode === "signup" && (
                   <div className="field">
                     <label className="field__label" htmlFor="auth-phone">
-                      Phone <span className="field__optional">(optional)</span>
+                      Phone
                     </label>
                     <div className="field__control">
                       <span className="field__icon">{ICONS.phone}</span>

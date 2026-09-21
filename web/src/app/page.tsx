@@ -627,7 +627,7 @@ function Header() {
               Login
             </a>
             <a className="btn btn--lime btn--sm" href="/auth">
-              Sign In
+              Register
             </a>
           </div>
         </nav>
