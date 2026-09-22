@@ -606,7 +606,6 @@ function Header() {
           </a>
 
           <div className="nav__actions">
-            HEAD
             <div className="nav__lang" role="group" aria-label="Language">
               <button
                 type="button"
@@ -623,10 +622,10 @@ function Header() {
                 EN
               </button>
             </div>
-            <a className="nav__login" href="/auth">
+            <a className="nav__login" href="/auth?mode=login">
               Login
             </a>
-            <a className="btn btn--lime btn--sm" href="/auth">
+            <a className="btn btn--lime btn--sm" href="/auth?mode=signup">
               Register
             </a>
           </div>

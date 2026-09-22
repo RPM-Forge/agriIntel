@@ -2208,6 +2208,10 @@ p {
 }
 
 @media (max-width: 540px) {
+  :root {
+    zoom: 1;
+  }
+
   .nav {
     height: 56px;
   }
@@ -2240,5 +2244,18 @@ p {
 
   .stat__num {
     font-size: 1.8rem;
+  }
+
+  .field__select {
+    appearance: auto;
+    -webkit-appearance: menulist;
+    background-image: none;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .field__select.has-icon {
+    background-image: none;
+    padding-left: 14px;
   }
 }

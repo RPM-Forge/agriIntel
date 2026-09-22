@@ -92,6 +92,11 @@ export default function AuthPage() {
   useEffect(() => {
     let active = true;
 
+    const requestedMode = new URLSearchParams(window.location.search).get("mode");
+    if (requestedMode === "login" || requestedMode === "signup") {
+      window.requestAnimationFrame(() => setMode(requestedMode));
+    }
+
     void fetch("/api/auth/me")
       .then((res) => {
         if (res.ok && active) router.replace("/");
