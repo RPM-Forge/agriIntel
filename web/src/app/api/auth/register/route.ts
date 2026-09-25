@@ -48,6 +48,7 @@ export async function POST(request: Request) {
 
   try {
     await connectDB();
+    if (!email) await User.syncIndexes();
 
     const lookup: Array<{ email?: string; phone?: string }> = [{ phone }];
     if (email) lookup.push({ email });
@@ -61,7 +62,7 @@ export async function POST(request: Request) {
 
     const user = await User.create({
       name,
-      email: email || undefined,
+      ...(email ? { email } : {}),
       phone,
       password: hashPassword(password),
       role,
