@@ -99,7 +99,7 @@ export default function AuthPage() {
 
     void fetch("/api/auth/me")
       .then((res) => {
-        if (res.ok && active) router.replace("/");
+        if (res.ok && active) router.replace("/dashboard");
       })
       .catch(() => {
         // An unavailable session endpoint should not prevent login or signup.
@@ -260,8 +260,8 @@ export default function AuthPage() {
                     ? `Hi ${success.name}, your ${success.role ?? "buyer"} account is ready.`
                     : `Hi ${success.name}, you're logged in as ${success.role ?? "buyer"}.`}
                 </p>
-                <button type="button" className="btn btn--lime auth__success-btn" onClick={() => router.push("/")}>
-                  Continue to Home
+                <button type="button" className="btn btn--lime auth__success-btn" onClick={() => router.push("/dashboard")}>
+                  Go to Dashboard
                 </button>
               </div>
             ) : (
