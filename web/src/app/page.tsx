@@ -2,6 +2,7 @@
 
 import type { FormEvent, ReactNode } from "react";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import { getPricePrediction } from "@/lib/priceClient";
 import { COMMODITIES, COMMODITIES_BY_STATE, GRADES, MARKET_LOCATIONS } from "@/lib/marketOptions";
 
@@ -1262,6 +1263,22 @@ function Footer() {
 /* ------------------------------------------------------------------ */
 
 export default function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    let active = true;
+    void fetch("/api/auth/me", { cache: "no-store" })
+      .then((response) => {
+        if (active && response.ok) router.replace("/dashboard");
+      })
+      .catch(() => {
+        // Keep the public landing page available when the session service cannot be reached.
+      });
+    return () => {
+      active = false;
+    };
+  }, [router]);
+
   return (
     <>
       <Header />

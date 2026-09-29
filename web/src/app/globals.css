@@ -4151,3 +4151,269 @@ p {
     max-width: none;
   }
 }
+
+.workflow-form {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.workflow-form__actions {
+  display: flex;
+  align-items: flex-end;
+}
+
+.workflow-form__wide {
+  grid-column: span 2;
+}
+
+.workflow-textarea {
+  min-height: 78px;
+  resize: vertical;
+}
+
+.workflow-location {
+  max-width: 520px;
+  margin-bottom: 20px;
+}
+
+.workflow-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.workflow-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 16px;
+  border: 1px solid var(--dash-line);
+  border-radius: var(--radius-md);
+  background: #fff;
+}
+
+.workflow-item--stack {
+  align-items: flex-end;
+}
+
+.workflow-item__main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.workflow-item__title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.workflow-item__title h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink-900);
+}
+
+.workflow-item__main p,
+.workflow-shipment__meta {
+  margin-top: 5px;
+  color: var(--ink-500);
+  font-size: 13px;
+}
+
+.workflow-order-form {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.workflow-order-form .field {
+  width: 140px;
+}
+
+.workflow-subline {
+  display: block;
+  margin-top: 3px;
+  color: var(--ink-500);
+  font-size: 12px;
+}
+
+.workflow-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.workflow-payment-form,
+.workflow-transport-form {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) repeat(2, minmax(150px, 0.75fr)) auto;
+  align-items: end;
+}
+
+.workflow-transport-form {
+  grid-template-columns: minmax(180px, 1fr) repeat(3, minmax(145px, 0.75fr)) auto;
+}
+
+.workflow-payment-form .field,
+.workflow-transport-form .field {
+  min-width: 0;
+}
+
+.workflow-note {
+  margin: 14px 0 18px;
+  padding: 14px 16px;
+  border: 1px solid var(--orange-200);
+  border-radius: var(--radius-md);
+  background: var(--orange-50);
+  color: var(--ink-700);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.workflow-note strong {
+  color: var(--orange-600);
+}
+
+.workflow-error {
+  margin: 12px 0;
+  color: var(--red-600);
+  font-size: 13px;
+}
+
+.workflow-muted {
+  padding: 16px 0;
+  color: var(--ink-500);
+  font-size: 14px;
+}
+
+.workflow-item .btn:disabled,
+.workflow-order-form .btn:disabled,
+.workflow-list .btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  transform: none;
+}
+
+.workflow-shipment {
+  padding: 18px;
+  border: 1px solid var(--dash-line);
+  border-radius: var(--radius-md);
+  background: #fff;
+}
+
+.workflow-shipment .ship-track {
+  margin: 22px 0;
+}
+
+.workflow-shipment__foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  color: var(--ink-500);
+  font-size: 12px;
+}
+
+.workflow-activity {
+  display: flex;
+  flex-direction: column;
+}
+
+.workflow-activity__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--dash-line);
+}
+
+.workflow-activity__item:last-child {
+  border-bottom: 0;
+}
+
+.workflow-activity__icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 11px;
+  background: var(--green-50);
+  color: var(--green-600);
+}
+
+.workflow-activity__copy {
+  display: flex;
+  flex: 1 1 auto;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.workflow-activity__copy strong {
+  color: var(--ink-900);
+  font-size: 13px;
+}
+
+.workflow-activity__copy span,
+.workflow-activity__meta time {
+  color: var(--ink-500);
+  font-size: 12px;
+}
+
+.workflow-activity__meta {
+  display: flex;
+  flex: none;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media (max-width: 900px) {
+  .workflow-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .workflow-form__wide {
+    grid-column: auto;
+  }
+
+  .workflow-payment-form,
+  .workflow-transport-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .workflow-form,
+  .workflow-payment-form,
+  .workflow-transport-form {
+    grid-template-columns: 1fr;
+  }
+
+  .workflow-item,
+  .workflow-item--stack {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .workflow-order-form {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .workflow-order-form .field {
+    width: 100%;
+  }
+
+  .workflow-activity__item {
+    align-items: flex-start;
+  }
+
+  .workflow-activity__meta {
+    align-items: flex-end;
+  }
+}

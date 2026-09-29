@@ -20,6 +20,12 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Marketplace workflows
+
+The dashboard uses the MongoDB connection configured by `MONGODB_URI`. Signed-in sellers can publish and close produce listings; buyers can place and cancel pending orders; sellers can accept or decline orders, arrange a shipment, and update its delivery stages. Buyers can post crop requirements for sellers to browse, follow their shipment, and create a payment record for an accepted order. Inventory is reserved when an order is placed and restored when a pending order is declined or cancelled.
+
+Payments are records only. The app does not transfer funds or call a bank, UPI, or escrow provider. A seller can mark a record settled after confirming the transfer outside the app. A payment gateway or escrow provider can be integrated later through the `/api/payments` routes.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
