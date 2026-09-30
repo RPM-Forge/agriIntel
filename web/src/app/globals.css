@@ -4372,6 +4372,255 @@ p {
   gap: 5px;
 }
 
+.fpo-notice {
+  margin: 12px 0;
+  padding: 12px 14px;
+  border: 1px solid var(--green-200);
+  border-radius: var(--radius-md);
+  background: var(--green-50);
+  color: var(--green-700);
+  font-size: 13px;
+}
+
+.fpo-demo-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 14px 0;
+  padding: 13px 15px;
+  border: 1px solid var(--orange-200);
+  border-radius: var(--radius-md);
+  background: var(--orange-50);
+  color: var(--ink-700);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.fpo-demo-banner svg {
+  flex: none;
+  margin-top: 1px;
+  color: var(--orange-600);
+}
+
+.fpo-demo-banner strong {
+  color: var(--orange-600);
+}
+
+.fpo-selected-lot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 20px 0;
+  padding: 18px 20px;
+  border: 1px solid var(--green-200);
+  border-radius: var(--radius-lg);
+  background: var(--green-50);
+}
+
+.fpo-selected-lot h2 {
+  margin-top: 4px;
+  color: var(--ink-900);
+  font-size: 18px;
+}
+
+.fpo-selected-lot p,
+.fpo-match-card > p,
+.fpo-pool-card > p {
+  margin-top: 5px;
+  color: var(--ink-500);
+  font-size: 13px;
+}
+
+.fpo-eyebrow {
+  color: var(--green-700);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.fpo-choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.fpo-choice {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  color: var(--green-700);
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.fpo-choice:hover:not(:disabled) {
+  border-color: var(--green-300);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.fpo-choice:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.fpo-choice__icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 13px;
+  background: var(--green-50);
+}
+
+.fpo-choice__copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.fpo-choice__copy strong {
+  color: var(--ink-900);
+  font-size: 15px;
+}
+
+.fpo-choice__copy span {
+  color: var(--ink-500);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.fpo-match-list {
+  display: grid;
+  gap: 12px;
+}
+
+.fpo-edit-panel {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--dash-line);
+}
+
+.fpo-form-actions {
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.fpo-lot-actions {
+  display: flex;
+  flex: none;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.fpo-match-card,
+.fpo-pool-card {
+  padding: 16px;
+  border: 1px solid var(--dash-line);
+  border-radius: var(--radius-md);
+  background: #fff;
+}
+
+.fpo-match-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.fpo-match-card__top h4 {
+  margin-top: 4px;
+  color: var(--ink-900);
+  font-size: 15px;
+}
+
+.fpo-contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.fpo-contact-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--green-700);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.fpo-pool-count {
+  color: var(--ink-700);
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.fpo-progress {
+  height: 9px;
+  margin-top: 13px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: var(--green-100);
+}
+
+.fpo-progress span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--green-600);
+  transition: width 0.2s ease;
+}
+
+.fpo-pool-remaining {
+  font-size: 12px !important;
+}
+
+.fpo-pool-join {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.fpo-pool-join .field {
+  width: min(260px, 100%);
+}
+
+@media (max-width: 640px) {
+  .fpo-choice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fpo-selected-lot,
+  .fpo-match-card__top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .fpo-pool-join {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .fpo-pool-join .field {
+    width: 100%;
+  }
+
+  .fpo-lot-actions {
+    width: 100%;
+  }
+}
+
 @media (max-width: 900px) {
   .workflow-form {
     grid-template-columns: repeat(2, minmax(0, 1fr));

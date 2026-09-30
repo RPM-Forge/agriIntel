@@ -1,0 +1,53 @@
+[
+  {
+    "demoKey": "demo-state-maharashtra",
+    "name": "Maharashtra Farmer Producer Company (Demo)",
+    "registrationNumber": "DEMO-FPO-001",
+    "contactName": "Demo Contact",
+    "phone": "+91-90000-00001",
+    "email": "demo.fpo.maharashtra@example.com",
+    "serviceAreas": [
+      {
+        "state": "Maharashtra",
+        "districts": [
+          "Ahilyanagar",
+          "Ahmednagar",
+          "Akola",
+          "Amarawati",
+          "Beed",
+          "Bhandara",
+          "Buldhana",
+          "Chandrapur",
+          "Chattrapati Sambhajinagar",
+          "Dharashiv",
+          "Dharashiv(Usmanabad)",
+          "Dhule",
+          "Hingoli",
+          "Jalana",
+          "Jalgaon",
+          "Jalna",
+          "Kolhapur",
+          "Latur",
+          "Mumbai",
+          "Nagpur",
+          "Nanded",
+          "Nandurbar",
+          "Nashik",
+          "Palghar",
+          "Parbhani",
+          "Pune",
+          "Raigad",
+          "Ratnagiri",
+          "Sangli",
+          "Satara",
+          "Sholapur",
+          "Solapur",
+          "Thane"
+        ]
+      }
+    ],
+    "crops": ["Wheat", "Rice", "Potato", "Onion", "Tomato"],
+    "grades": ["Grade A", "Grade B", "Grade C", "FAQ"],
+    "active": true
+  }
+]

@@ -20,7 +20,7 @@ export const NAV_SELLER: NavItem[] = [
   { label: "Market Prices", href: "/dashboard/market-prices", icon: "chartBar" },
   { label: "AI Advice", href: "/dashboard/ai-advice", icon: "sparkle" },
   { label: "My Produce", href: "/dashboard/my-produce", icon: "sprout" },
-  { label: "FPO", href: "/dashboard/fpo", icon: "users" },
+  { label: "FPO Marketplace", href: "/dashboard/fpo", icon: "users" },
   { label: "Payments", href: "/dashboard/payments", icon: "banknote" },
   { label: "Transportation", href: "/dashboard/transportation", icon: "truck" },
   { label: "My Sales", href: "/dashboard/orders", icon: "box" },
@@ -30,6 +30,7 @@ export const NAV_SELLER: NavItem[] = [
 export const NAV_BUYER: NavItem[] = [
   { label: "Dashboard", href: "/dashboard", icon: "grid" },
   { label: "Market Prices", href: "/dashboard/market-prices", icon: "chartBar" },
+  { label: "FPO Marketplace", href: "/dashboard/fpo", icon: "users" },
   { label: "Orders", href: "/dashboard/orders", icon: "box" },
   { label: "Payments", href: "/dashboard/payments", icon: "banknote" },
   { label: "Transportation", href: "/dashboard/transportation", icon: "truck" },

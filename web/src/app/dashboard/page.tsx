@@ -57,6 +57,14 @@ export default function DashboardIndex() {
               href="/dashboard/orders"
               tone="blue"
             />
+            <StatCard
+              icon="users"
+              title="FPO Marketplace"
+              value="Sell in bulk"
+              subtitle="Create lots and find FPO buyers"
+              href="/dashboard/fpo"
+              tone="violet"
+            />
           </>
         ) : (
           <>
